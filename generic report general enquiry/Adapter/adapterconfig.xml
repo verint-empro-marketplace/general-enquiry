@@ -1,0 +1,1530 @@
+<Configuration>
+  <mappings>
+    <Mapping>
+      <name>general_enquiry</name>
+      <eventcode>4100003</eventcode>
+      <queue></queue>
+    </Mapping>
+  </mappings>
+  <services/>
+  <customservices/>
+  <processes>
+    <ProcessMeta>
+      <action>create-individual-new</action>
+      <components>
+        <Component>
+          <id>422c0680-a1ff-4c2d-8947-e3a47326dd37</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Chain 0</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>25b10264-6565-4fc4-b46a-418a5df00cc7</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>XSL 0</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;flt:FWTIndividual&gt;&#xd;
+			&lt;Name&gt;&#xd;
+				&lt;Forename&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_forename&apos;]/dfor:value&quot; /&gt;&lt;/Forename&gt;&#xd;
+				&lt;Surname&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_surname&apos;]/dfor:value&quot; /&gt;&lt;/Surname&gt;&#xd;
+			&lt;/Name&gt;&#xd;
+		&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;txt_c_postcode&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;ContactPostals&gt;&#xd;
+			    	&lt;AddressNumber&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_addressnumber&apos;]/dfor:value&quot; /&gt;&lt;/AddressNumber&gt;&#xd;
+			    	&lt;AddressLine&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_addressline1&apos;]/dfor:value&quot; /&gt;&lt;/AddressLine&gt;&#xd;
+	                &lt;AddressLine&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_addressline2&apos;]/dfor:value&quot; /&gt;&lt;/AddressLine&gt;&#xd;
+	                &lt;City&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_town&apos;]/dfor:value&quot; /&gt;&lt;/City&gt;  &#xd;
+			    	&lt;Postcode&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_postcode&apos;]/dfor:value&quot; /&gt;&lt;/Postcode&gt;&#xd;
+			    	&lt;UPRN&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_c_uprn&apos;]/dfor:value&quot; /&gt;&lt;/UPRN&gt;&#xd;
+			    	&lt;flt:Usage&gt;&lt;/flt:Usage&gt;&#xd;
+		    		&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+		    	&lt;/ContactPostals&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;tel_c_mobile&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;ContactPhones&gt;&#xd;
+				    &lt;Number&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;tel_c_mobile&apos;]/dfor:value&quot; /&gt;&lt;/Number&gt;&#xd;
+				    &lt;DeviceType&gt;mobile&lt;/DeviceType&gt;&#xd;
+				    &lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+				    &lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+			    &lt;/ContactPhones&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;tel_c_telephone&apos;]/dfor:value != &apos;&apos;&quot;&gt;			&#xd;
+    			&lt;ContactPhones&gt;&#xd;
+    				&lt;Number&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;tel_c_telephone&apos;]/dfor:value&quot; /&gt;&lt;/Number&gt;&#xd;
+    				&lt;DeviceType&gt;telephone&lt;/DeviceType&gt;&#xd;
+    				&lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+    				&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+    			&lt;/ContactPhones&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;eml_c_email&apos;]/dfor:value != &apos;&apos;&quot;&gt;				&#xd;
+    			&lt;ContactEmails&gt;&#xd;
+    				&lt;EmailAddress&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;eml_c_email&apos;]/dfor:value&quot; /&gt;&lt;/EmailAddress&gt;&#xd;
+    				&lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+    				&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+    			&lt;/ContactEmails&gt;&#xd;
+			&lt;/xsl:if&gt;	&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;dt_dob&apos;]/dfor:value != &apos;&apos;&quot;&gt;				&#xd;
+    			&lt;DateOfBirth&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;dt_dob&apos;]/dfor:value&quot; /&gt;&lt;/DateOfBirth&gt;&#xd;
+			&lt;/xsl:if&gt;			&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;rad_gender&apos;]/dfor:value != &apos;&apos;&quot;&gt;				&#xd;
+    			&lt;Gender&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;rad_gender&apos;]/dfor:value&quot; /&gt;&lt;/Gender&gt;&#xd;
+			&lt;/xsl:if&gt;						&#xd;
+&#xd;
+		&lt;/flt:FWTIndividual&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>c206386e-0b7d-48b7-9c9c-d2907d47f080</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FLWeb 0</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>71a43448-088e-45fd-9d3e-af45ca6788d6</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;flt&quot;&gt;&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;dfor:form-data&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+&#xd;
+				&lt;dfor:name&gt;txt_customerID&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//flt:ObjectReference&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>get_uprn</action>
+      <components>
+        <Component>
+          <id>aabf426f-672e-4124-af8a-4b1c9aeca775</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Search for property</displayname>
+          <chain>
+            <nextcomponent>60977833-9ed7-4f0f-bccc-e0429273cf84</nextcomponent>
+            <actions>
+              <Action>
+                <id>e706d7ab-e8a2-4f8a-9ed3-2938b6df4d14</id>
+                <type>headerenricher</type>
+                <name>headerenricher_0</name>
+                <displayname>Add addressnumber , addressname, and postcode to header</displayname>
+                <headerenricher>
+                  <headernames>addressnumber,addressname,postcode</headernames>
+                  <headervalues>p_addressnumber,p_addressname,p_postcode</headervalues>
+                </headerenricher>
+              </Action>
+              <Action>
+                <id>03c8934c-122f-4a6f-a32d-c94d1158b915</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>Prepare search payload</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:param name=&apos;addressnumber&apos; /&gt;&#xd;
+&lt;xsl:param name=&apos;addressname&apos; /&gt;&#xd;
+&lt;xsl:param name=&apos;postcode&apos; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+        &lt;flt:FWTPropertySearch xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+         &lt;AddressNumber&gt;&#xd;
+             &lt;xsl:value-of select=&quot;$addressnumber&quot; /&gt;&#xd;
+         &lt;/AddressNumber&gt;&#xd;
+         &lt;Postcode&gt;&#xd;
+             &lt;xsl:value-of select=&quot;$postcode&quot; /&gt;&#xd;
+         &lt;/Postcode&gt;&#xd;
+         &lt;StreetName&gt;&#xd;
+             &lt;xsl:value-of select=&quot;$addressname&quot; /&gt;&#xd;
+         &lt;/StreetName&gt;&#xd;
+         &lt;/flt:FWTPropertySearch&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>c66bea87-4da6-400b-a376-a0efba3dcdc5</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FWTPropertySearch</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>bc2f672b-dee9-45ea-9b59-8c694dc306fd</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+	    &lt;dfor:form-data&gt;&#xd;
+		&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;propertyid&lt;/dfor:name&gt;&#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ObjectBriefDetails/ObjectID/flt:ObjectReference&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+		&lt;/dfor:field&gt;&#xd;
+		&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;uprn&lt;/dfor:name&gt;&#xd;
+			&lt;dfor:value&gt;&lt;/dfor:value&gt;&#xd;
+		&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>38225993-7561-4beb-980f-c45c5855c806</id>
+                <type>headerenricher</type>
+                <name>headerenricher_1</name>
+                <displayname>Header Enricher 1</displayname>
+                <headerenricher>
+                  <headernames>propertyid</headernames>
+                  <headervalues>propertyid</headervalues>
+                </headerenricher>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+        <Component>
+          <id>60977833-9ed7-4f0f-bccc-e0429273cf84</id>
+          <type>decisiongroup</type>
+          <name>decisiongroup_0</name>
+          <displayname>Decision Group 0</displayname>
+          <decisiongroup>
+            <defaultcomponent>end</defaultcomponent>
+            <decisions>
+              <Decision>
+                <gotocomponent>25389045-2c98-4e06-84db-67e1efa33a1f</gotocomponent>
+                <evaluation>and</evaluation>
+                <statements>
+                  <Statement>
+                    <fieldtype>12</fieldtype>
+                    <leftfield>@propertyid</leftfield>
+                    <rightfield></rightfield>
+                    <evaluation>ex</evaluation>
+                    <negate>false</negate>
+                  </Statement>
+                </statements>
+              </Decision>
+            </decisions>
+          </decisiongroup>
+        </Component>
+        <Component>
+          <id>25389045-2c98-4e06-84db-67e1efa33a1f</id>
+          <type>chain</type>
+          <name>chain_1</name>
+          <displayname>Retrieve property details</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>79b2a320-3924-4ed8-a3eb-8f9463866ccd</id>
+                <type>xsl</type>
+                <name>xsl_2</name>
+                <displayname>XSL 2</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+&lt;xsl:param name=&apos;propertyid&apos; /&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+        &lt;flt:FLPropertyID xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+         &lt;flt:ObjectType&gt;D3&lt;/flt:ObjectType&gt;&#xd;
+         &lt;flt:ObjectReference&gt;&lt;xsl:value-of select=&quot;$propertyid&quot; /&gt;&lt;/flt:ObjectReference&gt;&#xd;
+      &lt;/flt:FLPropertyID&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>d0d0c8bf-01ac-4413-9c6d-0142435ff6f3</id>
+                <type>flweb</type>
+                <name>flweb_1</name>
+                <displayname>FLWeb 1</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>85c366f9-92e2-40cd-9f5d-0b6cc1831977</id>
+                <type>xsl</type>
+                <name>xsl_3</name>
+                <displayname>XSL 3</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;dfor:form-data&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;uprn&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//UPRN&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>person-retrieve-new</action>
+      <components>
+        <Component>
+          <id>f541126a-3691-4a50-ab41-218c7c3b1062</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Chain 0</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>d3de0a61-0d91-4fb4-a52c-c9d67355195d</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>XSL 0</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;flt&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;flt:FLIndividualID&gt;&#xd;
+			&lt;flt:ObjectType&gt;C1&lt;/flt:ObjectType&gt;&#xd;
+			&lt;flt:ObjectReference&gt;&#xd;
+				&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;person_search_results&apos;]/dfor:value&quot; /&gt;&#xd;
+			&lt;/flt:ObjectReference&gt;&#xd;
+		&lt;/flt:FLIndividualID&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>03ce7899-c5a1-4e6e-a0f9-e847caa528cc</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FLWeb 0</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>f4ab8b2f-40b8-4002-a1cb-e7d6aa2c632e</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;flt&quot;&gt;&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;dfor:form-data&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HasName&lt;/dfor:name&gt;&#xd;
+				&lt;xsl:choose&gt;&#xd;
+					&lt;xsl:when test=&quot;//Name[flt:Preferred = &apos;true&apos;]&quot;&gt;&#xd;
+						&lt;dfor:value&gt;true&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:when&gt;&#xd;
+					&lt;xsl:otherwise&gt;&#xd;
+						&lt;dfor:value&gt;false&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:otherwise&gt;&#xd;
+				&lt;/xsl:choose&gt;				&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;txt_returnedCustomerID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//BriefDetails/ObjectID/flt:ObjectReference&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+           &#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;txt_customerid&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//flt:ObjectReference[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;		&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Title&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Title&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Forenames&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Forename[1]&quot; /&gt; &lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Forename[2]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;					&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Forename1&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Forename[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Forename2&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Forename[2]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Surname&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Surname&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;					&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Suffix1&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Suffix1&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Suffix2&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Suffix2&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Suffix3&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/Suffix3&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;				&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-FullName&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name[flt:Preferred = &apos;true&apos;]/FullName&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+		&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HasAddress&lt;/dfor:name&gt;&#xd;
+				&lt;xsl:choose&gt;&#xd;
+					&lt;xsl:when test=&quot;//ContactPostals&quot;&gt;&#xd;
+						&lt;dfor:value&gt;true&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:when&gt;&#xd;
+					&lt;xsl:otherwise&gt;&#xd;
+						&lt;dfor:value&gt;false&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:otherwise&gt;&#xd;
+				&lt;/xsl:choose&gt;				&#xd;
+			&lt;/dfor:field&gt;			&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AddressNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/AddressNumber&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;		&#xd;
+			&lt;xsl:for-each select=&quot;//ContactPostals/AddressLine&quot;&gt;&#xd;
+				&lt;dfor:field&gt;&#xd;
+					&lt;dfor:name&gt;profile-&lt;xsl:value-of select=&quot;local-name()&quot; /&gt;&lt;xsl:value-of select=&quot;position()&quot;/&gt;&lt;/dfor:name&gt;&#xd;
+					&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;current()&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+				&lt;/dfor:field&gt;	&#xd;
+			&lt;/xsl:for-each&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Zipcode&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/Zipcode&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Postcode&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/Postcode&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-StateCode&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/StateCode&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-City&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/City&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-StateCode&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/StateCode&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-UPRN&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/UPRN&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Address&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&#xd;
+				    &lt;xsl:if test=&quot;//ContactPostals/AddressNumber != &apos;&apos;&quot;&gt;&lt;xsl:value-of select=&quot;//ContactPostals/AddressNumber&quot; /&gt;, &lt;/xsl:if&gt;&lt;xsl:for-each select=&quot;//ContactPostals[flt:Preferred = &apos;true&apos;]/AddressLine&quot;&gt;&lt;xsl:if test=&quot;current() != &apos;&apos;&quot;&gt; &lt;xsl:if test=&quot;position() != 1&quot;&gt;,&lt;/xsl:if&gt; &lt;xsl:value-of select=&quot;current()&quot; /&gt;&lt;/xsl:if&gt;&lt;/xsl:for-each&gt;&lt;xsl:if test=&quot;ContactPostals[flt:Preferred = &apos;true&apos;]/Zipcode != &apos;&apos;&quot;&gt;,&lt;xsl:value-of select=&quot;ContactPostals[flt:Preferred = &apos;true&apos;]/Zipcode&quot; /&gt;&lt;/xsl:if&gt;&#xd;
+                &lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+            	&lt;dfor:name&gt;profile-SubscribedAddress&lt;/dfor:name&gt;&#xd;
+            	&lt;dfor:options&gt;&#xd;
+            		&lt;xsl:for-each-group select=&quot;//ChildSet[Name=&apos;LGNOC_EXTERNAL_SERVICES&apos;]/Child&quot; group-by=&quot;Value[*[1]=&apos;SERVICEREF&apos;][*[2]]&quot;&gt;&#xd;
+            		    &lt;xsl:if test=&quot;Value[*[1]=&apos;HIGHLIGHTVALUE1&apos;][*[2]=&apos;Service Live&apos;] and not(Value/Key[&apos;DELETEIND&apos;]/NumberValue)&quot;&gt;&#xd;
+                		    &lt;dfor:option&gt;&#xd;
+                    			&lt;dfor:label&gt;&#xd;
+                    			    &lt;xsl:value-of select=&quot;Value[*[1]=&apos;DESCRIPTION&apos;]/*[2]&quot; /&gt;&#xd;
+                			    &lt;/dfor:label&gt;&#xd;
+                    			&lt;dfor:value&gt;&#xd;
+                    			    &lt;xsl:value-of select=&quot;concat(Value[*[1]=&apos;SERVICEREF&apos;]/*[2],&apos;|&apos;,Value[*[1]=&apos;DESCRIPTION&apos;]/*[2],&apos;|&apos;,Value[*[1]=&apos;HIGHLIGHTTYPE1&apos;]/*[2])&quot; /&gt;&#xd;
+                    			&lt;/dfor:value&gt;&#xd;
+                    			&lt;dfor:selected&gt;false&lt;/dfor:selected&gt;&#xd;
+                    		&lt;/dfor:option&gt;    &#xd;
+            		    &lt;/xsl:if&gt;&#xd;
+            		&lt;/xsl:for-each-group&gt;&#xd;
+            	&lt;/dfor:options&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AddressNoZipcode&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:if test=&quot;//ContactPostals/AddressNumber != &apos;&apos;&quot;&gt;&lt;xsl:value-of select=&quot;//ContactPostals/AddressNumber&quot; /&gt;,&lt;/xsl:if&gt;&lt;xsl:for-each select=&quot;//ContactPostals[flt:Preferred = &apos;true&apos;]/AddressLine&quot;&gt;&lt;xsl:if test=&quot;current() != &apos;&apos;&quot;&gt;&lt;xsl:if test=&quot;position() != 1&quot;&gt;,&lt;/xsl:if&gt;&lt;xsl:value-of select=&quot;current()&quot; /&gt;&lt;/xsl:if&gt;&lt;/xsl:for-each&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;				&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AddressLines&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:for-each select=&quot;//ContactPostals/AddressLine&quot;&gt;&lt;xsl:if test=&quot;current() != &apos;&apos;&quot;&gt;&lt;xsl:if test=&quot;position() != 1&quot;&gt;,&lt;/xsl:if&gt;&lt;xsl:value-of select=&quot;current()&quot; /&gt;&lt;/xsl:if&gt;&lt;/xsl:for-each&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+		    &#xd;
+								&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HasPhone&lt;/dfor:name&gt;&#xd;
+				&lt;xsl:choose&gt;&#xd;
+					&lt;xsl:when test=&quot;//ContactPhones[flt:Preferred = &apos;true&apos;]&quot;&gt;&#xd;
+						&lt;dfor:value&gt;true&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:when&gt;&#xd;
+					&lt;xsl:otherwise&gt;&#xd;
+						&lt;dfor:value&gt;false&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:otherwise&gt;&#xd;
+				&lt;/xsl:choose&gt;				&#xd;
+			&lt;/dfor:field&gt;&#xd;
+&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-MobileNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;mobile&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-TelephoneNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;telephone&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-WorkMobileNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;mobile&apos; and flt:Usage = &apos;work&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-WorkTelephoneNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;telephone&apos; and flt:Usage = &apos;work&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;		&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HomeMobileNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;mobile&apos; and flt:Usage = &apos;home&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HomeTelephoneNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;telephone&apos; and flt:Usage = &apos;home&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;									&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-WorkNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[flt:Usage = &apos;work&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HomeNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[flt:Usage = &apos;home&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;			&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Number&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[flt:Preferred = &apos;true&apos;]/Number[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HasEmail&lt;/dfor:name&gt;&#xd;
+				&lt;xsl:choose&gt;&#xd;
+					&lt;xsl:when test=&quot;//ContactEmails[flt:Usage = &apos;work&apos;]&quot;&gt;&#xd;
+						&lt;dfor:value&gt;true&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:when&gt;&#xd;
+					&lt;xsl:otherwise&gt;&#xd;
+						&lt;dfor:value&gt;false&lt;/dfor:value&gt;&#xd;
+					&lt;/xsl:otherwise&gt;&#xd;
+				&lt;/xsl:choose&gt;				&#xd;
+			&lt;/dfor:field&gt;&#xd;
+&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-WorkEmail&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactEmails[flt:Usage = &apos;work&apos;]/EmailAddress[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HomeEmail&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactEmails[flt:Usage = &apos;home&apos;]/EmailAddress[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;			&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Email&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactEmails[flt:Preferred = &apos;true&apos;]/EmailAddress[1]&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Gender&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Gender&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;		&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-PlaceOfBirth&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//PlaceOfBirth&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-CountryOfBirth&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//CountryOfBirth&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Nationality&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Nationality&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-MaritalStatus&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//MaritalStatus&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-DrivingLicenceNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//DrivingLicenceNumber&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-DrivingLicencePatternID&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//DrivingLicencePatternID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AdditionalDrivingLicences&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//AdditionalDrivingLicences&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-PassportNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//PassportNumber&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-PassportNumberPatternID&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//PassportNumberPatternID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AdditionalPassports&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//AdditionalPassports&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;		&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-HealthNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//HealthNumber&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-NationalInsuranceNumber&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//NationalInsuranceNumber&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Disabilities&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Disabilities&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-DateOfBirth&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//DateOfBirth&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-Occupation&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Occupation&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;	&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;profile-AdditionalOccupations&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//AdditionalOccupations&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+									&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;nameID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//Name/NameID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+						&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;telephoneID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;telephone&apos;]/PhoneID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+            &lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;mobileID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPhones[DeviceType = &apos;mobile&apos;]/PhoneID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt; &#xd;
+			&lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;emailID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactEmails[flt:Preferred = &apos;true&apos;]/EmailID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+            &lt;dfor:field&gt;&#xd;
+			&lt;dfor:name&gt;addressID&lt;/dfor:name&gt;    &#xd;
+			&lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ContactPostals/AddressID&quot; /&gt;&lt;/dfor:value&gt;&#xd;
+            &lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;	&#xd;
+	&lt;/xsl:template&gt;&#xd;
+	&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>prop-search</action>
+      <components>
+        <Component>
+          <id>cb5de48e-1e6e-47b5-8102-736ec8595ce4</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Chain 0</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>0e8f637f-000b-4846-bfcf-f0bed8a1c5f5</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>XSL 0</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+&#xd;
+		&lt;flt:FWTPropertySearch&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;addressnumber&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;AddressNumber&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressnumber&apos;]/dfor:value&quot;/&gt;&lt;/AddressNumber&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;buildingname&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;BuildingName&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;buildingname&apos;]/dfor:value&quot;/&gt;&lt;/BuildingName&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;streetname&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;StreetName&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;streetname&apos;]/dfor:value&quot;/&gt;&lt;/StreetName&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;postcode&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;Postcode&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;postcode&apos;]/dfor:value&quot;/&gt;&lt;/Postcode&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;uprn&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;UPRN&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;uprn&apos;]/dfor:value&quot;/&gt;&lt;/UPRN&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+		&lt;/flt:FWTPropertySearch&gt;&#xd;
+&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>2611eee3-34e6-40a2-b0ec-300736506142</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FLWeb 0</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>e6067c3c-970e-4075-ac9d-00d71e8e3645</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot;&#xd;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;flt&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;		&#xd;
+		&lt;dfor:form-data&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;prop_search_results&lt;/dfor:name&gt;&#xd;
+	            &lt;dfor:value&gt;&lt;xsl:value-of select=&quot;//ObjectID/flt:ObjectReference&quot;/&gt;&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;		&#xd;
+	&lt;/xsl:template&gt;&#xd;
+	&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>update-individual-new</action>
+      <components>
+        <Component>
+          <id>4f8b50ce-9b18-4cac-99a9-486ed6266617</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Chain 0</displayname>
+          <chain>
+            <nextcomponent>2b75b769-9e82-44a2-800d-7cfa72d513b5</nextcomponent>
+            <actions>
+              <Action>
+                <id>27ced925-8c2d-4a51-a27c-d5b5222ecf4c</id>
+                <type>xsl</type>
+                <name>xsl_2</name>
+                <displayname>XSL 2</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;dfor:form-data&gt;&#xd;
+			&lt;dfor:field&gt;&#xd;
+				&lt;dfor:name&gt;person_search_results&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;&#xd;
+					&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;customerID&apos;]/dfor:value&quot; /&gt;&#xd;
+				&lt;/dfor:value&gt;&#xd;
+			&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+        <Component>
+          <id>2b75b769-9e82-44a2-800d-7cfa72d513b5</id>
+          <type>process</type>
+          <name>process_0</name>
+          <displayname>Retrieve person new</displayname>
+          <process>
+            <nextcomponent>5f10408c-e01c-4bb4-9ba5-06f19cf52172</nextcomponent>
+            <actionname>person-retrieve-new</actionname>
+          </process>
+        </Component>
+        <Component>
+          <id>5f10408c-e01c-4bb4-9ba5-06f19cf52172</id>
+          <type>chain</type>
+          <name>chain_1</name>
+          <displayname>Chain 1</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>ebfeaa16-86d2-4385-be6b-5b4f2478d55e</id>
+                <type>merge</type>
+                <name>merge_0</name>
+                <displayname>Merge Payload 0</displayname>
+                <merge>
+                  <revertpayloadafter>true</revertpayloadafter>
+                  <mergewithroot>false</mergewithroot>
+                  <overwriteexisting>false</overwriteexisting>
+                </merge>
+              </Action>
+              <Action>
+                <id>6590e6cd-9d64-4737-b0ab-789d4361140b</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>XSL 0</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+&#xd;
+	    &lt;flt:FWTIndividualUpdate xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot;&gt;&#xd;
+         &lt;BriefDetails&gt;&#xd;
+            &lt;ObjectID&gt;&#xd;
+               &lt;flt:ObjectType&gt;C1&lt;/flt:ObjectType&gt;&#xd;
+               &lt;!--1 to 3 repetitions:--&gt;&#xd;
+               &lt;flt:ObjectReference&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;customerID&apos;]/dfor:value&quot; /&gt;&lt;/flt:ObjectReference&gt;&#xd;
+            &lt;/ObjectID&gt;&#xd;
+            &lt;flt:ObjectDescription&gt;&lt;/flt:ObjectDescription&gt;&#xd;
+         &lt;/BriefDetails&gt;&#xd;
+         &lt;Name&gt;&#xd;
+            &lt;IndividualNameDetails&gt;&#xd;
+               &lt;NameID&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;nameID&apos;]/dfor:value&quot; /&gt;&lt;/NameID&gt;    &#xd;
+               &lt;Title&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;Title&apos;]/dfor:value&quot; /&gt;&lt;/Title&gt;&#xd;
+               &lt;Forename&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_first_name&apos;]/dfor:value&quot; /&gt;&lt;/Forename&gt;&#xd;
+               &lt;Surname&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_last_name&apos;]/dfor:value&quot; /&gt;&lt;/Surname&gt;&#xd;
+               &lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt; &#xd;
+               &lt;!--0 to 10 repetitions:--&gt; &#xd;
+                &lt;!--UserDefined1:--&gt;&#xd;
+                &lt;UserDefined&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;PreferredContact&apos;]/dfor:value&quot; /&gt;&lt;/UserDefined&gt;&#xd;
+                &lt;!--UserDefined2:--&gt;&#xd;
+                &lt;UserDefined&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;Mailings&apos;]/dfor:value&quot; /&gt;&lt;/UserDefined&gt;&#xd;
+                &lt;!--UserDefined3:--&gt;         &#xd;
+                &lt;UserDefined&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;PrefComms&apos;]/dfor:value&quot; /&gt;&lt;/UserDefined&gt;&#xd;
+                &lt;!--UserDefined4:--&gt;         &#xd;
+                &lt;UserDefined&gt;&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;AgreeSurvey&apos;]/dfor:value&quot; /&gt;&lt;/UserDefined&gt;&#xd;
+&#xd;
+            &lt;/IndividualNameDetails&gt;&#xd;
+            &lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+         &lt;/Name&gt;&#xd;
+         &lt;!--Zero or more repetitions:--&gt;&#xd;
+         &#xd;
+          &lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;telephoneID&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPhones&gt;&#xd;
+						&lt;PhoneDetails&gt;&#xd;
+							&lt;PhoneID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;telephoneID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/PhoneID&gt;&#xd;
+							&lt;Number&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;phone&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Number&gt;&#xd;
+                           &lt;DeviceType&gt;Telephone&lt;/DeviceType&gt;&#xd;
+                           &lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+                            &lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PhoneDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPhones&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:otherwise&gt;&#xd;
+					&lt;ContactPhones&gt;&#xd;
+						&lt;PhoneDetails&gt;&#xd;
+							&lt;PhoneID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;telephoneID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/PhoneID&gt;&#xd;
+							&lt;Number&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;phone&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Number&gt;&#xd;
+                           &lt;DeviceType&gt;Telephone&lt;/DeviceType&gt;&#xd;
+                           &lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+                            &lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PhoneDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPhones&gt;&#xd;
+				&lt;/xsl:otherwise&gt;&#xd;
+			&lt;/xsl:choose&gt;         &#xd;
+         &#xd;
+          &lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;mobileID&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPhones&gt;&#xd;
+						&lt;PhoneDetails&gt;&#xd;
+							&lt;PhoneID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;mobileID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/PhoneID&gt;&#xd;
+							&lt;Number&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;tel_mobile&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Number&gt;&#xd;
+                           &lt;DeviceType&gt;Mobile&lt;/DeviceType&gt;&#xd;
+                           &lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+                            &lt;flt:Preferred&gt;false&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PhoneDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPhones&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:otherwise&gt;&#xd;
+					&lt;ContactPhones&gt;&#xd;
+						&lt;PhoneDetails&gt;&#xd;
+							&lt;PhoneID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;mobileID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/PhoneID&gt;&#xd;
+							&lt;Number&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;tel_mobile&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Number&gt;&#xd;
+                           &lt;DeviceType&gt;Mobile&lt;/DeviceType&gt;&#xd;
+                           &lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+                            &lt;flt:Preferred&gt;false&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PhoneDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPhones&gt;&#xd;
+				&lt;/xsl:otherwise&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+         &#xd;
+         &lt;!--Zero or more repetitions:--&gt;&#xd;
+         &#xd;
+         			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;emailID&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactEmails&gt;&#xd;
+						&lt;EmailDetails&gt;&#xd;
+							&lt;EmailID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;emailID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/EmailID&gt;&#xd;
+							&lt;EmailAddress&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;email&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/EmailAddress&gt;&#xd;
+							&lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+							&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/EmailDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactEmails&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:otherwise&gt;&#xd;
+					&lt;ContactEmails&gt;&#xd;
+						&lt;EmailDetails&gt;&#xd;
+							&lt;EmailID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;emailID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/EmailID&gt;&#xd;
+							&lt;EmailAddress&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;email&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/EmailAddress&gt;&#xd;
+							&lt;flt:Usage&gt;home&lt;/flt:Usage&gt;&#xd;
+							&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/EmailDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactEmails&gt;&#xd;
+				&lt;/xsl:otherwise&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;num_p_streetnumber&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressNumber&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;num_p_streetnumber&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressNumber&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;num_p_streetnumber&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressNumber&gt;&lt;/AddressNumber&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos; and //dfor:field[dfor:name=&apos;num_p_streetnumber&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressNumber&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;num_p_streetnumber&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressNumber&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_streetname&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressLine&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_streetname&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressLine&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_streetname&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressLine&gt;&lt;/AddressLine&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_streetname&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;AddressLine&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_streetname&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressLine&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_town&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;City&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_town&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/City&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_town&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;City&gt;&lt;/City&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_town&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;City&gt;&#xd;
+							    &lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_town&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/City&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_postcode&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;Postcode&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_postcode&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Postcode&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_postcode&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;Postcode&gt;&lt;/Postcode&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_postcode&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;Postcode&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_postcode&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/Postcode&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_uprn&apos;]/dfor:value !=&apos;&apos; &quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;UPRN&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_uprn&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/UPRN&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_uprn&apos;]/dfor:value =&apos;&apos; &quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;UPRN&gt;&lt;/UPRN&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+				&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos; and //dfor:field[dfor:name=&apos;txt_p_uprn&apos;]/dfor:value !=&apos;&apos; &quot;&gt;&#xd;
+					&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;UPRN&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;txt_p_uprn&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/UPRN&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+				&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+			&#xd;
+			&lt;xsl:choose&gt;&#xd;
+			&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Update&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;xsl:when test=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value = &apos;&apos;&quot;&gt;&#xd;
+				&lt;ContactPostals&gt;&#xd;
+						&lt;PostalDetails&gt;&#xd;
+							&lt;AddressID&gt;&#xd;
+								&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;addressID&apos;]/dfor:value&quot; /&gt;&#xd;
+							&lt;/AddressID&gt;&#xd;
+							&lt;flt:Preferred&gt;true&lt;/flt:Preferred&gt;&#xd;
+						&lt;/PostalDetails&gt;&#xd;
+						&lt;flt:ListItemUpdateType&gt;Insert&lt;/flt:ListItemUpdateType&gt;&#xd;
+					&lt;/ContactPostals&gt;&#xd;
+			&lt;/xsl:when&gt;&#xd;
+			&lt;/xsl:choose&gt;&#xd;
+      &lt;/flt:FWTIndividualUpdate&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>8de036f0-b724-4ef3-88fb-2d20b4813752</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FLWeb 0</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>11cd6876-a781-49ef-8e97-de73e4689d18</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+	    &#xd;
+		&lt;dfor:form-data&gt;&#xd;
+&#xd;
+			&lt;dfor:field&gt;&#xd;
+&#xd;
+				&lt;dfor:name&gt;txt_success&lt;/dfor:name&gt;&#xd;
+				&lt;dfor:value&gt;Completed&lt;/dfor:value&gt;&#xd;
+&#xd;
+			&lt;/dfor:field&gt;&#xd;
+		&lt;/dfor:form-data&gt;	    &#xd;
+&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>update_case</action>
+      <components>
+        <Component>
+          <id>2c5ca35e-3b79-4645-8c87-2fbde74faa0b</id>
+          <type>chain</type>
+          <name>chain_0</name>
+          <displayname>Chain 0</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>d3b65efa-0bff-4bda-9b22-cda725a413eb</id>
+                <type>xsl</type>
+                <name>xsl_0</name>
+                <displayname>XSL 0</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+		&lt;flt:FWTCaseUpdate xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot;&gt;&#xd;
+			&lt;flt:CaseReference&gt;&#xd;
+				&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;caseid&apos;]/dfor:value&quot; /&gt;&#xd;
+			&lt;/flt:CaseReference&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;final_title&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;!--Optional:--&gt;&#xd;
+			    &lt;Title&gt;&#xd;
+    				&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;final_title&apos;]/dfor:value&quot; /&gt;&#xd;
+    			&lt;/Title&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;final_desc&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;!--Optional:--&gt;&#xd;
+    			&lt;Description&gt;&#xd;
+    				&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;final_desc&apos;]/dfor:value&quot; /&gt;&#xd;
+    			&lt;/Description&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;obj_type&apos;]/dfor:value != &apos;&apos; and //dfor:field[dfor:name=&apos;obj_id&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+				&lt;!--Optional:--&gt;&#xd;
+				&lt;AssociatedObject&gt;&#xd;
+					&lt;flt:ObjectType&gt;&#xd;
+						&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;obj_type&apos;]/dfor:value&quot; /&gt;&#xd;
+					&lt;/flt:ObjectType&gt;&#xd;
+					&lt;!--1 to 3 repetitions:--&gt;&#xd;
+					&lt;flt:ObjectReference&gt;&#xd;
+						&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;obj_id&apos;]/dfor:value&quot; /&gt;&#xd;
+					&lt;/flt:ObjectReference&gt;&#xd;
+				&lt;/AssociatedObject&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;longitude&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;!--Optional:--&gt;&#xd;
+			    &lt;XCoord&gt;&#xd;
+					&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;longitude&apos;]/dfor:value&quot; /&gt;&#xd;
+				&lt;/XCoord&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+			&lt;xsl:if test=&quot;//dfor:field[dfor:name=&apos;latitude&apos;]/dfor:value != &apos;&apos;&quot;&gt;&#xd;
+			    &lt;!--Optional:--&gt;&#xd;
+			    &lt;YCoord&gt;&#xd;
+					&lt;xsl:value-of select=&quot;//dfor:field[dfor:name=&apos;latitude&apos;]/dfor:value&quot; /&gt;&#xd;
+				&lt;/YCoord&gt;&#xd;
+			&lt;/xsl:if&gt;&#xd;
+		&lt;/flt:FWTCaseUpdate&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+              <Action>
+                <id>edffc92b-d067-468a-95da-14ea76468e5b</id>
+                <type>flweb</type>
+                <name>flweb_0</name>
+                <displayname>FLWeb 0</displayname>
+                <flweb/>
+              </Action>
+              <Action>
+                <id>e1852f19-d31f-4f82-a266-8a0eb335c78b</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>XSL 1</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+	    &lt;dfor:form-data&gt;&lt;dfor:field&gt;&#xd;
+	&lt;dfor:name&gt;update_log&lt;/dfor:name&gt;&#xd;
+	&lt;dfor:value&gt;success&lt;/dfor:value&gt;&#xd;
+&lt;/dfor:field&gt;&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+    <ProcessMeta>
+      <action>voluntary_subscription</action>
+      <components>
+        <Component>
+          <id>587a61a1-ff0a-4276-a552-c385d4a3b719</id>
+          <type>process</type>
+          <name>process_2</name>
+          <displayname>Call get_subscription Process</displayname>
+          <process>
+            <nextcomponent>57a2b703-3571-45a3-83ef-9e41d731b009</nextcomponent>
+            <actionname>get_subscription</actionname>
+          </process>
+        </Component>
+        <Component>
+          <id>57a2b703-3571-45a3-83ef-9e41d731b009</id>
+          <type>decisiongroup</type>
+          <name>decisiongroup_0</name>
+          <displayname>Decision Group 0</displayname>
+          <decisiongroup>
+            <defaultcomponent>end</defaultcomponent>
+            <decisions>
+              <Decision>
+                <gotocomponent>6b672004-7ceb-4672-ac8e-7640ad869764</gotocomponent>
+                <evaluation>and</evaluation>
+                <statements>
+                  <Statement>
+                    <fieldtype>12</fieldtype>
+                    <leftfield>num_rows</leftfield>
+                    <rightfield>0</rightfield>
+                    <evaluation>ex</evaluation>
+                    <negate>false</negate>
+                  </Statement>
+                  <Statement>
+                    <fieldtype>12</fieldtype>
+                    <leftfield>num_rows</leftfield>
+                    <rightfield>&apos;0&apos;</rightfield>
+                    <evaluation>eq</evaluation>
+                    <negate>false</negate>
+                  </Statement>
+                </statements>
+              </Decision>
+              <Decision>
+                <gotocomponent>f4f10295-f981-4470-9cde-888b2941aa6f</gotocomponent>
+                <evaluation>and</evaluation>
+                <statements>
+                  <Statement>
+                    <fieldtype>12</fieldtype>
+                    <leftfield>num_rows</leftfield>
+                    <rightfield>1</rightfield>
+                    <evaluation>ex</evaluation>
+                    <negate>false</negate>
+                  </Statement>
+                  <Statement>
+                    <fieldtype>12</fieldtype>
+                    <leftfield>num_rows</leftfield>
+                    <rightfield>&apos;0&apos;</rightfield>
+                    <evaluation>eq</evaluation>
+                    <negate>true</negate>
+                  </Statement>
+                </statements>
+              </Decision>
+            </decisions>
+          </decisiongroup>
+        </Component>
+        <Component>
+          <id>6b672004-7ceb-4672-ac8e-7640ad869764</id>
+          <type>process</type>
+          <name>process_0</name>
+          <displayname>Call retrieve_tasklist_new Process</displayname>
+          <process>
+            <nextcomponent>7bfdf926-1850-4e1a-82ad-45bd7e7ccf98</nextcomponent>
+            <actionname>retrieve_tasklist_new</actionname>
+          </process>
+        </Component>
+        <Component>
+          <id>7bfdf926-1850-4e1a-82ad-45bd7e7ccf98</id>
+          <type>process</type>
+          <name>process_3</name>
+          <displayname>Call insert_new_subscription Process</displayname>
+          <process>
+            <nextcomponent>bf0976dd-35d4-4abd-b126-32783435345f</nextcomponent>
+            <actionname>insert_new_subscription</actionname>
+          </process>
+        </Component>
+        <Component>
+          <id>bf0976dd-35d4-4abd-b126-32783435345f</id>
+          <type>process</type>
+          <name>process_1</name>
+          <displayname>Call email_subscription Process</displayname>
+          <process>
+            <nextcomponent>71feb84c-0bc8-4fa5-aaa0-939c5c1bb297</nextcomponent>
+            <actionname>email_subscription</actionname>
+          </process>
+        </Component>
+        <Component>
+          <id>71feb84c-0bc8-4fa5-aaa0-939c5c1bb297</id>
+          <type>chain</type>
+          <name>chain_3</name>
+          <displayname>Case when subscription is succeed</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>d306b75d-0609-4b33-91b7-243087afba4c</id>
+                <type>xsl</type>
+                <name>xsl_2</name>
+                <displayname>Return &apos;success&apos; response</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+&#xd;
+        &lt;dfor:form-data xmlns:dfor=&quot;http://kana.com/dforms&quot;&gt;&#xd;
+	&lt;dfor:field&gt;&#xd;
+		&lt;dfor:name&gt;output_log&lt;/dfor:name&gt;&#xd;
+		&lt;dfor:value&gt;Subscribed&lt;/dfor:value&gt;&#xd;
+	&lt;/dfor:field&gt;&#xd;
+&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+        <Component>
+          <id>f4f10295-f981-4470-9cde-888b2941aa6f</id>
+          <type>chain</type>
+          <name>chain_2</name>
+          <displayname>Case when subscription is repeated</displayname>
+          <chain>
+            <nextcomponent>end</nextcomponent>
+            <actions>
+              <Action>
+                <id>e4ac488a-252d-4bcf-a9ad-64883886d502</id>
+                <type>xsl</type>
+                <name>xsl_1</name>
+                <displayname>Return &apos;already subcribed&apos; response</displayname>
+                <xsl>
+                  <xsl>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:flt=&quot;http://www.lagan.com/wsdl/FLTypes&quot; xmlns:dfor=&quot;http://kana.com/dforms&quot; exclude-result-prefixes=&quot;dfor&quot;&gt;&#xd;
+&#xd;
+	&lt;xsl:template match=&quot;/&quot;&gt;&#xd;
+&#xd;
+        &lt;dfor:form-data xmlns:dfor=&quot;http://kana.com/dforms&quot;&gt;&#xd;
+	&lt;dfor:field&gt;&#xd;
+		&lt;dfor:name&gt;output_log&lt;/dfor:name&gt;&#xd;
+		&lt;dfor:value&gt;Already subscribed&lt;/dfor:value&gt;&#xd;
+	&lt;/dfor:field&gt;&#xd;
+&lt;/dfor:form-data&gt;&#xd;
+	&lt;/xsl:template&gt;&#xd;
+&#xd;
+&lt;/xsl:stylesheet&gt;&#xd;
+</xsl>
+                  <currentpayload>true</currentpayload>
+                </xsl>
+              </Action>
+            </actions>
+          </chain>
+        </Component>
+      </components>
+      <isRest>false</isRest>
+      <retry>false</retry>
+      <retrycount>0</retrycount>
+    </ProcessMeta>
+  </processes>
+  <datasources/>
+  <wsdls/>
+  <converters/>
+  <snippets/>
+  <processtasks/>
+</Configuration>

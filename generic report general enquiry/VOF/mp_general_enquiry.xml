@@ -1,0 +1,3984 @@
+<FormMeta>
+  <id></id>
+  <name>mp_general_enquiry</name>
+  <pages>
+    <Page>
+      <id>e779a7f3-bb50-4fef-b592-91b0c3ba51f0</id>
+      <template>
+        <id>6e5d6ea0-58e5-4937-9373-7144fe5c8122</id>
+        <areas>
+          <Area>
+            <id>73c85eab-7d47-4f15-826a-cb015027528c</id>
+            <name>area_FC26Q5N7</name>
+            <boxes>
+              <Box>
+                <id>62506884-7440-418b-bb9c-8dca4af90bb8</id>
+                <name>box_ZTO4R3T0</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>105af34c-6b5c-43ed-af3d-6ed67e5f20a1</id>
+            <name>area_5W49PAY5</name>
+            <boxes>
+              <Box>
+                <id>9e54c779-c870-4277-bf7c-83f6695a6ca2</id>
+                <name>box_DL70X4U7</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>89cc0e6f-b11f-4a15-b933-de45c8874c66</id>
+            <name>area_OVB9GZV6</name>
+            <boxes>
+              <Box>
+                <id>8201abd8-6c2a-49ac-b358-0bf04a41e883</id>
+                <name>box_5ZK9XX62</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>49c0401b-11eb-4fc5-b9cd-a71cfd932ce7</id>
+            <name>area_GVR4ZSJ6</name>
+            <boxes>
+              <Box>
+                <id>af169c0f-c023-4cc5-8ca8-dc2e580b5e0a</id>
+                <name>box_LLV8Q689</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>request_details</name>
+      <displayname>General Enquiry</displayname>
+      <active>true</active>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>8a717070-dff7-4736-8b63-2f170b17d769</id>
+          <position>box_ZTO4R3T0</position>
+          <type>header</type>
+          <name>hrd_J8K3XFA0</name>
+          <header>
+            <id>455d2cb8-cc1d-4eee-bfbb-e3aa7bebb0c4</id>
+            <name>hrd_J8K3XFA0</name>
+            <type>header1</type>
+            <label>Make a general enquiry</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>b13fa3cf-ec80-45cb-ad71-a7b3cd97d09f</id>
+          <position>box_ZTO4R3T0</position>
+          <type>spacer</type>
+          <name>spr_6JX2PFZ9</name>
+          <spacer>
+            <id>14f22228-1ede-4f1f-a413-e155681df740</id>
+            <name>spr_6JX2PFZ9</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>dba2d32d-f753-4d7b-a76f-c2c296a32b72</id>
+          <position>box_DL70X4U7</position>
+          <type>advancedhtml</type>
+          <name>ahtm_B1I9XAL0</name>
+          <html>
+            <id>e1260402-be90-4db4-9e1d-70608db37c2e</id>
+            <name>ahtm_B1I9XAL0</name>
+            <active>true</active>
+            <classname>required-notice</classname>
+          </html>
+        </Widget>
+        <Widget>
+          <id>06c6db0f-2711-436a-a83c-9b6ea2625adb</id>
+          <position>box_DL70X4U7</position>
+          <type>textarea</type>
+          <name>txta_your_enquiry</name>
+          <field>
+            <id>f0d29420-ca5b-42c8-ad81-5788fc0efc4c</id>
+            <label>Your enquiries</label>
+            <name>txta_your_enquiry</name>
+            <type>textarea</type>
+            <maxlength>500</maxlength>
+            <rows>5</rows>
+            <cols>50</cols>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>Your enquiries are required</message>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txta-gov text-align-right</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>f7af0d47-9b26-47fc-b194-933790119c05</id>
+          <position>box_DL70X4U7</position>
+          <type>spacer</type>
+          <name>spr_D5A0U8U3</name>
+          <spacer>
+            <id>8893efba-c88f-4e77-b29e-0920336d8b0f</id>
+            <name>spr_D5A0U8U3</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>0da442b6-cb52-44fc-b852-23a8d6920778</id>
+          <position>box_5ZK9XX62</position>
+          <type>buttonset</type>
+          <name>bset_request_a_litter_bin_previous_and_next</name>
+          <buttonset>
+            <id></id>
+            <name>bset_request_a_litter_bin_previous_and_next</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>2efb99da-d66c-4913-a1a2-2856ea9251fe</id>
+                <name>but_request_a_litter_bin_next</name>
+                <type>next</type>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <active>true</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>8043d1d1-5ad6-4904-a3cc-75a70c3b1f25</id>
+      <name>page_12</name>
+      <displayname>General Enquiry details</displayname>
+      <active>true</active>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>f34f61db-8a83-4d77-ad3e-91c591fe6f2b</id>
+          <position>default</position>
+          <type>buttonset</type>
+          <name>bset_QGZ7UPB1</name>
+          <buttonset>
+            <id>ccb52d29-6bfa-4d0e-80d2-d5eb2fbdeb90</id>
+            <name>bset_QGZ7UPB1</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>b36c313b-dd44-4819-b26a-8b8605d8afa1</id>
+                <name>but_back_feedback_details</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <active>true</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>04561cdb-deb2-4170-91ff-099916a8835a</id>
+          <position>default</position>
+          <type>header</type>
+          <name>hrd_P7H97MT2</name>
+          <header>
+            <id>63ccb233-4797-4315-a5b6-c23c7dd4ebe6</id>
+            <name>hrd_P7H97MT2</name>
+            <type>header1</type>
+            <label>Enquiry details</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>1b0c2e3f-3cb1-4d0b-97a7-c61cc32c1860</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_account_no</name>
+          <field>
+            <id>c4877bea-d663-4e67-9632-fc248baf752b</id>
+            <label>If your comments relate to a council service for which you have an account, please provide an account number </label>
+            <helptext>You may find your account number on a relevant bill or other correspondence. If this is not relevant to you, please leave blank.</helptext>
+            <name>txt_account_no</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>ad093912-30e1-4f92-ba63-8c1a87747416</id>
+          <position>default</position>
+          <type>spacer</type>
+          <name>spr_1UF2QFR5</name>
+          <spacer>
+            <id>6709b81b-9860-42eb-af11-077b7883e65b</id>
+            <name>spr_1UF2QFR5</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>74a0f434-9a6f-482f-b29d-58b747fc6131</id>
+          <position>default</position>
+          <type>textarea</type>
+          <name>txta_previous_contact</name>
+          <field>
+            <id>9c4fbc9c-c5d8-472d-8c2f-22b66744337d</id>
+            <label>If you have previously contacted us about this issue, please give details</label>
+            <helptext>Provide the date and method of contact (email/telephone). If this is not relevant to you, please leave blank.</helptext>
+            <name>txta_previous_contact</name>
+            <type>textarea</type>
+            <maxlength>255</maxlength>
+            <rows>5</rows>
+            <cols>50</cols>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>4a34fbf8-69d1-4788-a90b-83098c74ac83</id>
+          <position>default</position>
+          <type>buttonset</type>
+          <name>bset_N2I7O2L3</name>
+          <buttonset>
+            <id>92409db6-d2f1-4237-ba94-7b628dfdf1f5</id>
+            <name>bset_N2I7O2L3</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>5e936a86-e834-4c1c-bea4-da1833e9b4cf</id>
+                <name>but_continue_feedback_details</name>
+                <type>next</type>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <active>true</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>1210c946-91e9-43c6-aae8-b3b58b424535</id>
+      <template>
+        <id>1619a980-266c-4df8-9564-4f2303623765</id>
+        <areas>
+          <Area>
+            <id>ebdfe565-947f-491b-8e4e-94064dab7324</id>
+            <name>area_ZDP16RN31</name>
+            <boxes>
+              <Box>
+                <id>f3c5bbf6-afff-4bbd-aabe-7aa04cfd0d47</id>
+                <name>box_K8T5AZS61</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>c2d16720-3652-4622-b0be-d4eb4e6b6198</id>
+            <name>area_provdetailsquestion_c</name>
+            <boxes>
+              <Box>
+                <id>11847905-609c-47fc-bd62-2ce2f698f051</id>
+                <name>box_QN58OQ871</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>c7747491-1914-4aeb-abdd-d63c71cd1a05</id>
+            <name>area_c_nextbut</name>
+            <boxes>
+              <Box>
+                <id>54d3bd15-efae-4600-a2de-8348fb3f80b4</id>
+                <name>box_FOL3Y936</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>provide_details_citizen</name>
+      <displayname>Case updates</displayname>
+      <active>true</active>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>3a5d5bf8-9452-435f-ab01-9c1c0511f181</id>
+          <position>box_K8T5AZS61</position>
+          <type>buttonset</type>
+          <name>bset_80X6XD6311</name>
+          <buttonset>
+            <id>3225053e-5aa4-49e4-9d5c-273798e39886</id>
+            <name>bset_80X6XD6311</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>c61f2bca-5fd7-4756-93dc-97947fe5c1ca</id>
+                <name>but_back_citizen_provide</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <active>true</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>90334527-0d08-4f8f-9f4d-07c8579b99d4</id>
+          <position>box_K8T5AZS61</position>
+          <type>header</type>
+          <name>hrd_LAR6UBX411</name>
+          <header>
+            <id>b7cb7e13-d8a1-4ad3-ad3f-d5ead55977c6</id>
+            <name>hrd_LAR6UBX411</name>
+            <type>header1</type>
+            <label>Case updates</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>6ff9da09-0cf3-4b6b-b630-15b8e6867642</id>
+          <position>box_QN58OQ871</position>
+          <type>radio</type>
+          <name>rad_identifyc</name>
+          <field>
+            <id>04534863-ae11-44c6-812f-41d876ac9e85</id>
+            <label> Would you like to receive case updates?</label>
+            <helptext>We’ll only use your details to provide you with updates about this report</helptext>
+            <name>rad_identifyc</name>
+            <type>radio</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>Please reply yes or no</message>
+            <active>true</active>
+            <verticalOptions>true</verticalOptions>
+            <options>
+              <Option>
+                <id>114143ec-d605-45d8-93a8-ca2a685020dd</id>
+                <translations/>
+                <value>yes</value>
+                <label>yes</label>
+                <active>true</active>
+                <selected>true</selected>
+                <sectionon>area_custsearch2,area_c_nextbut</sectionon>
+                <on>html_detailsadd</on>
+              </Option>
+              <Option>
+                <id>99fac1fd-3083-4bc0-84b6-ea1f2d9b9485</id>
+                <translations/>
+                <value>no</value>
+                <label>no</label>
+                <active>true</active>
+                <selected>false</selected>
+                <sectionon>area_c_nextbut</sectionon>
+                <sectionoff>area_custsearch2</sectionoff>
+                <off>html_detailsadd</off>
+              </Option>
+            </options>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>389e5990-3533-4d6a-9223-990825aec65a</id>
+          <position>box_QN58OQ871</position>
+          <type>text</type>
+          <name>eml_subscriber</name>
+          <field>
+            <id>df1ce85a-23f5-4843-916f-77632acdeb04</id>
+            <label>Email address</label>
+            <helptext>We&apos;ll only use your details to provide you with updates about this case.</helptext>
+            <name>eml_subscriber</name>
+            <type>text</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <pattern>^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$</pattern>
+            <message>Please provide email for subscription</message>
+            <active>false</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-Email</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>7e16ddaa-105f-4a65-86da-9b83b5b5fae8</id>
+          <position>box_QN58OQ871</position>
+          <type>file</type>
+          <name>file_upload</name>
+          <field>
+            <id>d7cd14df-8e3a-4dfe-9887-8af5ba07a2a5</id>
+            <label>If you think it would help us please provide a photo</label>
+            <helptext>Image file types accepted are .jpeg, .jpg or .png up to 5MB in size</helptext>
+            <name>file_upload</name>
+            <type>file</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <maxsize>5000000</maxsize>
+            <accepts>.jpg,.png,.JPG,.PNG,.JPEG,.jpeg</accepts>
+            <classname>file-limit-3</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>a8d76c0d-ff06-40fd-bec9-382a4bfdd653</id>
+          <position>box_QN58OQ871</position>
+          <type>buttonset</type>
+          <name>bset_XAY8ZXX61</name>
+          <buttonset>
+            <id>cb65d951-a2aa-4ecf-bc11-b9ed215adbc0</id>
+            <name>bset_XAY8ZXX61</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>bf98ed1e-2daa-4562-b1b0-6cce8581f0c6</id>
+                <name>but_continue_citizen_details</name>
+                <type>next</type>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <active>true</active>
+                <access>agent</access>
+              </Button>
+              <Button>
+                <id>f7cb5cde-4d2a-422b-a93e-e064861b360d</id>
+                <name>but_submit_citizen_details</name>
+                <label>Submit</label>
+                <classname>btn-continue</classname>
+                <active>false</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>274e2fdb-1bbe-4047-9aba-89f129f97222</id>
+      <template>
+        <id>92c74b17-0bef-4340-b481-8fcf7cee0f3a</id>
+        <areas>
+          <Area>
+            <id>b628dae7-7e44-4ccb-9551-77beae6c7376</id>
+            <name>area_ZDP16RN3</name>
+            <boxes>
+              <Box>
+                <id>5f997a17-ac80-49bf-87ab-9572f806ca89</id>
+                <name>box_K8T5AZS6</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>08381211-8691-47dd-b698-9316c322a684</id>
+            <name>area_provdetailsquestion</name>
+            <boxes>
+              <Box>
+                <id>186e23ba-c531-446d-b306-4fab2611e6e7</id>
+                <name>box_QN58OQ87</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>16f347d1-7f9e-4934-aae2-cc70f40da7d6</id>
+            <name>area_customer_search</name>
+            <boxes>
+              <Box>
+                <id>f5b3e87c-5949-45c4-82b2-532b8264352f</id>
+                <name>box_DI94OJJ0</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <displayname>area_customer_search</displayname>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>9c391519-3630-4f93-8885-ec3b50f71874</id>
+            <name>area_3W40GM71</name>
+            <boxes>
+              <Box>
+                <id>6058b424-705d-4225-92b6-f8ee0e835529</id>
+                <name>box_A4G736Q7</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>030a4c10-be32-4de1-971c-a1a9b015c759</id>
+            <name>area_customer_name</name>
+            <boxes>
+              <Box>
+                <id>9c8d613a-b2d0-4109-8083-4279bedf51b0</id>
+                <name>box_T6B4HHJ7</name>
+                <size>last twelve</size>
+                <displayname>Customer Name</displayname>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <displayname>area_customer_name</displayname>
+            <fieldset>false</fieldset>
+            <active>false</active>
+            <access>agent</access>
+          </Area>
+          <Area>
+            <id>b518c5ce-b0c3-4558-8bc6-f9f774577d82</id>
+            <name>area_customer_contacts</name>
+            <boxes>
+              <Box>
+                <id>512187dc-291e-4dc1-ad1e-379fa018f85d</id>
+                <name>box_CZP0DIJ7</name>
+                <size>last twelve</size>
+                <displayname>Customer Contacts</displayname>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <displayname>area_customer_contacts</displayname>
+            <fieldset>false</fieldset>
+            <active>false</active>
+            <access>agent</access>
+          </Area>
+          <Area>
+            <id>9ed60571-c72f-4e08-b07a-66747caef349</id>
+            <name>area_TS77ZB82</name>
+            <boxes>
+              <Box>
+                <id>8b9c4f29-d6aa-4533-9ccd-cd701a5303c9</id>
+                <name>box_2IP3OMA2</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>1a6b355e-5f74-4e49-9d2a-6e9c4e396591</id>
+            <name>area_custsearch2</name>
+            <boxes>
+              <Box>
+                <id>07af2b87-91a6-4891-a9d4-70a009f139fa</id>
+                <name>box_EMX98MS8</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+            <access>agent</access>
+          </Area>
+          <Area>
+            <id>9f3af4c2-9a69-4883-9095-722423655799</id>
+            <name>area_search_result</name>
+            <boxes>
+              <Box>
+                <id>82ec2404-40dc-4ba5-b46c-d11c900c1e5e</id>
+                <name>box_QEK9U9V3</name>
+                <size>six</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+              <Box>
+                <id>b3966660-c749-47e7-9d88-18d1e8e2d1cd</id>
+                <name>box_3CE3WVB0</name>
+                <size>last six</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>false</active>
+          </Area>
+          <Area>
+            <id>e160373e-9113-4394-b244-d2e55eb49d5c</id>
+            <name>area_a_Nextbut</name>
+            <boxes>
+              <Box>
+                <id>9cfa325a-af30-4a1f-9a3c-176f4842ce64</id>
+                <name>box_FOL3Y9361</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>provide_details</name>
+      <displayname>Search customer details</displayname>
+      <active>true</active>
+      <access>agent</access>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>cae353d2-65a7-4c7d-9743-a34ddabc0115</id>
+          <position>box_K8T5AZS6</position>
+          <type>buttonset</type>
+          <name>bset_80X6XD631</name>
+          <buttonset>
+            <id>6299c13b-a476-42aa-924d-558c2fd0a11f</id>
+            <name>bset_80X6XD631</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>d0db157d-9b1d-468b-bb8a-35a9e42be607</id>
+                <name>but_back_customer_details</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <active>true</active>
+              </Button>
+              <Button>
+                <id>e49d34e2-dd94-4af8-8c7f-89fe140d75ec</id>
+                <name>but_save_customer_search_details</name>
+                <label>Save</label>
+                <classname>btn-back saveform</classname>
+                <active>false</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>86b86a0d-2175-44ac-bb00-55fd9dfe4135</id>
+          <position>box_K8T5AZS6</position>
+          <type>header</type>
+          <name>hrd_LAR6UBX41</name>
+          <header>
+            <id>412bc632-27c6-4ca6-987d-1e925cad6a91</id>
+            <name>hrd_LAR6UBX41</name>
+            <type>header1</type>
+            <label>Customer details</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>1334f8c0-79db-4e5c-8391-77bd94636d1e</id>
+          <position>box_DI94OJJ0</position>
+          <type>customersearch</type>
+          <name>cs_customer_search</name>
+          <searchwidget class="CustomerSearch">
+            <id>536a4750-f33c-406e-bd95-19d9d26c8f56</id>
+            <fields>
+              <WidgetField>
+                <id>26f35776-114c-4870-b29c-aac4ff07a555</id>
+                <label>First name</label>
+                <name>cs_txt_forename</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>true</required>
+                <message>Must be 1 letter or more</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>forename</customalias>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>forename</fieldtype>
+              </WidgetField>
+              <WidgetField>
+                <id>c7a3002a-b774-4542-b0ed-a886b2086979</id>
+                <label>Last name</label>
+                <name>cs_txt_name</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>true</required>
+                <message>Must be 2 letters or more</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>name</customalias>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>name</fieldtype>
+              </WidgetField>
+              <WidgetField>
+                <id>21bc4395-dd59-4897-8e20-8325d1da4ddb</id>
+                <label>Postcode</label>
+                <name>cs_txt_postcode</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>false</required>
+                <message>Must be an Edinburgh postcode</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>postcode</customalias>
+                <classname>pc_regex</classname>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>postcode</fieldtype>
+              </WidgetField>
+            </fields>
+            <name>cs_customer_search</name>
+            <index>0</index>
+            <performsearch>
+              <id>9c83e9e6-03e1-4fba-926a-902a51f4b17f</id>
+              <label>Search</label>
+              <classname>btn-continue</classname>
+              <action>customersearch</action>
+              <selector>.cs_ZTP256Q2</selector>
+              <active>true</active>
+            </performsearch>
+            <displayname>Customer search</displayname>
+            <setid>true</setid>
+            <loaddata>true</loaddata>
+            <required>false</required>
+            <message></message>
+            <active>true</active>
+          </searchwidget>
+        </Widget>
+        <Widget>
+          <id>50352a2a-8713-4313-ba9f-ec478f98567d</id>
+          <position>box_DI94OJJ0</position>
+          <type>buttonset</type>
+          <name>bset_WB99Z1G6</name>
+          <buttonset>
+            <id>54d3979b-eab5-4244-8b8f-85b1bfe01446</id>
+            <name>bset_WB99Z1G6</name>
+            <classname>left</classname>
+            <active>true</active>
+            <access>agent</access>
+            <buttons>
+              <Button>
+                <id>eff81758-7471-4886-80dc-a4b572fc6f2d</id>
+                <name>but_individual_notfound</name>
+                <type>move</type>
+                <label>Individual Not Found</label>
+                <classname>btn-gov</classname>
+                <moveto>create_individual_details</moveto>
+                <active>false</active>
+                <pageon>create_individual_details,create_individual_address</pageon>
+                <pageoff>provide_details_address</pageoff>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>e03fed50-8b96-4d99-b188-28ac7cfd013e</id>
+          <position>box_A4G736Q7</position>
+          <type>spacer</type>
+          <name>spr_EYJ8M355</name>
+          <spacer>
+            <id>13ba10f3-de7e-4e35-be86-0ce67e3d771b</id>
+            <name>spr_EYJ8M355</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>75c445cd-9b6e-42cc-bac0-2f7c6a6c1d82</id>
+          <position>box_T6B4HHJ7</position>
+          <type>header</type>
+          <name>hrd_A7673UX5</name>
+          <header>
+            <id>6b26f318-c02a-45e6-8719-5dc5a5d51a51</id>
+            <name>hrd_A7673UX5</name>
+            <type>header3</type>
+            <label>Personal details</label>
+            <classname>margin-33</classname>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>54da39c4-8d7d-4037-98f8-f5fa39a34e49</id>
+          <position>box_T6B4HHJ7</position>
+          <type>select</type>
+          <name>sel_customer_type</name>
+          <field>
+            <id>6876754d-448f-45d1-a941-e6dfb443c0b7</id>
+            <label>Customer type</label>
+            <name>sel_customer_type</name>
+            <type>select</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>You must provide customer type</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <options>
+              <Option>
+                <id>b0052c22-bf87-461a-b808-878775156521</id>
+                <translations/>
+                <value>MOP</value>
+                <label>Member of the Public</label>
+                <active>true</active>
+                <selected>true</selected>
+              </Option>
+              <Option>
+                <id>e8c418e3-4592-4c60-bd58-9816229058da</id>
+                <translations/>
+                <value>BUS</value>
+                <label>Bussiness</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>d696ce56-f85c-403b-a8f7-934b2947d600</id>
+                <translations/>
+                <value>COMC</value>
+                <label>Community Council</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>5a7d5169-c297-4a61-bca9-043c3b1d3793</id>
+                <translations/>
+                <value>CONT</value>
+                <label>Contractor</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>0aa997ec-df53-41ee-baf2-f6cb3cba5bcf</id>
+                <translations/>
+                <value>CEMP</value>
+                <label>Council Employee</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>dd53ea6b-bccb-4214-8fab-ffd470d74c92</id>
+                <translations/>
+                <value>CREW</value>
+                <label>Crew or Inspector</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>e06b9176-dc3e-43c0-afdf-1eec3b0e306b</id>
+                <translations/>
+                <value>EMER</value>
+                <label>Emergency Services</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>2ac79bbc-9dd0-43cf-8845-04b112254a69</id>
+                <translations/>
+                <value>EVEN</value>
+                <label>Event Organiser</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>2cb4ed6c-218c-4c46-9618-c0cf088efa71</id>
+                <translations/>
+                <value>GARD</value>
+                <label>Garden Aid</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>244c9876-3b70-4db6-8395-2dfe62609842</id>
+                <translations/>
+                <value>MEMB</value>
+                <label>Member/Councillor</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>d5b98a24-6b4a-4177-b6b8-631844ba9f10</id>
+                <translations/>
+                <value>MP</value>
+                <label>MP/MEP</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>aa54ec18-1251-4974-ba9a-4355de4da8a5</id>
+                <translations/>
+                <value>PLAN</value>
+                <label>Planet</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>4703c504-0e13-4f68-8939-67bb90470a49</id>
+                <translations/>
+                <value>TW01</value>
+                <label>Trade Waste Customer </label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>a153089c-a719-4084-89b0-4a71688b480b</id>
+                <translations/>
+                <value>UTIL</value>
+                <label>Utility Complany</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+            </options>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>d1f423ab-6a1a-42e7-8cca-fb117cb3ae0f</id>
+          <position>box_T6B4HHJ7</position>
+          <type>text</type>
+          <name>txt_first_name</name>
+          <field>
+            <id>7462c150-62f2-4369-9520-fefe8e0805f5</id>
+            <label>First Name </label>
+            <name>txt_first_name</name>
+            <type>text</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>First name is required</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-Forename1</mapfrom>
+            <classname>txt-gov text-align-right</classname>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>132547c6-ae97-4006-84e2-4d7655137efd</id>
+          <position>box_T6B4HHJ7</position>
+          <type>text</type>
+          <name>txt_last_name</name>
+          <field>
+            <id>eaf0ae3b-fbca-4bdd-813d-89ea6a7b865b</id>
+            <label>Last Name </label>
+            <name>txt_last_name</name>
+            <type>text</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>Last name is required</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-Surname</mapfrom>
+            <classname>txt-gov text-align-right</classname>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>5cbe58f8-ef1d-4195-a207-3344b1390e4b</id>
+          <position>box_T6B4HHJ7</position>
+          <type>email</type>
+          <name>email</name>
+          <field>
+            <id>32523290-7e35-4cb7-9cf7-58f845ab6b29</id>
+            <label>Email </label>
+            <helptext>We&apos;ll only use your details to provide you with updates about this case.</helptext>
+            <name>email</name>
+            <type>email</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <pattern>^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$</pattern>
+            <message>You must enter a valid email address</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-Email</mapfrom>
+            <classname>txt-gov text-align-right</classname>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>a593d719-dd1f-4c6c-8bf7-339426afb533</id>
+          <position>box_T6B4HHJ7</position>
+          <type>text</type>
+          <name>phone</name>
+          <field>
+            <id>80c88e27-9b28-46e9-aad5-b1c40433adc1</id>
+            <label>Phone </label>
+            <name>phone</name>
+            <type>text</type>
+            <size>30</size>
+            <maxlength>40</maxlength>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <pattern>^(\(?\+?[0-9]*\)?)?[0-9_\- \(\)]*$</pattern>
+            <message>Please enter valid phone number</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-TelephoneNumber</mapfrom>
+            <classname>txt-gov text-align-right</classname>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>be099af3-1ab9-46bb-851f-8d4ff0766d55</id>
+          <position>box_T6B4HHJ7</position>
+          <type>textarea</type>
+          <name>txta_full_address_retrieve</name>
+          <field>
+            <id>5c218e07-55e0-4da8-abcc-708d19b4faab</id>
+            <label>Full address </label>
+            <name>txta_full_address_retrieve</name>
+            <type>textarea</type>
+            <rows>3</rows>
+            <cols>50</cols>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-Address</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>1957fb1c-9af3-4ca5-8e06-a6c19ffe03b0</id>
+          <position>box_CZP0DIJ7</position>
+          <type>buttonset</type>
+          <name>bset_UNX623H8</name>
+          <buttonset>
+            <id>379eceb4-0040-41c8-993b-1d6128ec6adc</id>
+            <name>bset_UNX623H8</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>25e3f731-2966-489e-83be-79ceed9de6b6</id>
+                <name>but_updatedetails</name>
+                <label>Update Details</label>
+                <classname>btn-orange</classname>
+                <action>update-individual</action>
+                <selector>txt_first_name,txt_last_name,customerID,email,phone,tel_mobile,num_p_streetnumber,txt_p_streetname,txt_p_town,txt_p_postcode</selector>
+                <required>txt_first_name,txt_last_name,customerID</required>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>f90c56cb-a862-4578-a208-6dd5ff3a4fb3</id>
+          <position>box_EMX98MS8</position>
+          <type>text</type>
+          <name>customerID</name>
+          <field>
+            <id>1a7e1cc5-40f8-49e1-bafa-9138f189af35</id>
+            <label>Customer ID</label>
+            <name>customerID</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>three</labelwidth>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>7b0d353b-2240-449f-ba0e-d3ae03a0d6ea</id>
+          <position>box_EMX98MS8</position>
+          <type>text</type>
+          <name>txt_r_streetnumber</name>
+          <field>
+            <id>9dc4cc0a-deb5-4d30-a75f-bd4cf082cb6b</id>
+            <label>Street Number</label>
+            <name>txt_r_streetnumber</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-AddressNumber</mapfrom>
+            <classname>txt-gov</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>44ddf3f3-9aab-4ff8-831f-2317b99f5fc2</id>
+          <position>box_EMX98MS8</position>
+          <type>text</type>
+          <name>txt_r_streetname</name>
+          <field>
+            <id>8532d59a-e950-4b38-b7ef-40ba4d278032</id>
+            <label>Street Name</label>
+            <name>txt_r_streetname</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-AddressLine1</mapfrom>
+            <classname>txt-gov</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>9b1d0fd7-33e5-4b56-947f-6628d41f3839</id>
+          <position>box_EMX98MS8</position>
+          <type>text</type>
+          <name>txt_r_town</name>
+          <field>
+            <id>7d45f5df-7f23-4247-afc5-2cfee295d94f</id>
+            <label>Town</label>
+            <name>txt_r_town</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-City</mapfrom>
+            <classname>txt-gov</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>cbbd5966-5649-46c0-958c-8e57143259b6</id>
+          <position>box_EMX98MS8</position>
+          <type>text</type>
+          <name>txt_r_postcode</name>
+          <field>
+            <id>02285b5a-5c8c-4ead-9204-14e532c8ae6f</id>
+            <label>Postcode</label>
+            <name>txt_r_postcode</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-Postcode</mapfrom>
+            <classname>txt-gov</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>2fa02259-7c3c-4695-87aa-529cc9cd6643</id>
+          <position>box_EMX98MS8</position>
+          <type>buttonset</type>
+          <name>bset_customer</name>
+          <buttonset>
+            <id>a54362ca-20de-4df3-a479-6a52a7521904</id>
+            <name>bset_customer</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>61f7f302-087b-43ee-bd3e-97b82b0a3858</id>
+                <name>but_continue_selectindividual</name>
+                <label>Submit</label>
+                <classname>btn-continue</classname>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+              <Button>
+                <id>00467b4a-b0ae-4ae5-b7b4-480dc6ba9341</id>
+                <name>but_individual_address</name>
+                <label>Update address</label>
+                <classname>btn-gov copyaddressvalue</classname>
+                <active>false</active>
+                <access>agent</access>
+                <pageoff>create_individual_details,create_individual_address</pageoff>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>c37a0a20-e76a-4e8e-b704-4783d842c1c9</id>
+          <position>box_EMX98MS8</position>
+          <type>buttonset</type>
+          <name>bset_FP08Q306</name>
+          <buttonset>
+            <id>070e0083-1179-4d43-ac75-9fffcf071ddd</id>
+            <name>bset_FP08Q306</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <access>agent</access>
+            <buttons>
+              <Button>
+                <id>627e4a26-6c4f-4e9b-b9d8-c3b56b3d5e6d</id>
+                <name>but_continue_customerdetails_r</name>
+                <type>next</type>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>1ccaa4a9-ff29-4ae5-ac55-f77c16053453</id>
+          <position>box_QEK9U9V3</position>
+          <type>textarea</type>
+          <name>txta_address</name>
+          <field>
+            <id>d27bdeef-3e93-4cb8-b6a4-5e7eb7e7e735</id>
+            <label>Address</label>
+            <name>txta_address</name>
+            <type>textarea</type>
+            <rows>10</rows>
+            <cols>100</cols>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-Address</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>5fc43f87-e3ec-4d4f-b1cd-dac14c8bcc54</id>
+          <position>box_FOL3Y9361</position>
+          <type>text</type>
+          <name>txt_customeraddress</name>
+          <field>
+            <id>470b00aa-cc21-4180-bbd5-879d88cec885</id>
+            <label>Customer Address</label>
+            <name>txt_customeraddress</name>
+            <type>text</type>
+            <size>100</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>profile-Address</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>96b76e56-06af-4b56-875c-0d638fa5c7fd</id>
+      <template>
+        <id>f8625421-593b-49d9-8b4e-ae7812ebf168</id>
+        <areas>
+          <Area>
+            <id>556c41c8-d2fe-4346-a438-4f466f9ce5a1</id>
+            <name>area_X1M8M833</name>
+            <boxes>
+              <Box>
+                <id>b8ecf626-2559-48c4-b130-c3c7f93feaa2</id>
+                <name>box_2KB5PP26</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>6cbdcc55-a07f-4ca6-ba98-faac5bfc65b2</id>
+            <name>area_OO80IQK9</name>
+            <boxes>
+              <Box>
+                <id>3e9117be-b5b9-4581-88e8-d5b68d250890</id>
+                <name>box_LUM8GL25</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>1d125b96-2d3e-485e-8a0f-9064a878808a</id>
+            <name>area_E3N8JXN1</name>
+            <boxes>
+              <Box>
+                <id>a45e00d6-0dde-441a-877f-a60b352a353c</id>
+                <name>box_3QX5WXW6</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>2412be6e-ced0-4a19-a6e6-d1c8845ecf5e</id>
+            <name>area_ADM70N67</name>
+            <boxes>
+              <Box>
+                <id>f2336a14-7c57-49fd-b281-9dcc2ee97ccc</id>
+                <name>box_ZXT2APQ8</name>
+                <size>last twelve</size>
+                <displayname>Customer Address</displayname>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>1c531974-6384-4bcd-97f8-1a6084c31064</id>
+            <name>area_FPZ8Z070</name>
+            <boxes>
+              <Box>
+                <id>92324098-c974-4d0d-a789-4367cf5bdc6f</id>
+                <name>box_XZE8UEJ8</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>provide_details_address</name>
+      <displayname>Search address details</displayname>
+      <active>true</active>
+      <access>agent</access>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>19d6c8c0-4189-4b78-8df6-02ca51d5c4c2</id>
+          <position>box_2KB5PP26</position>
+          <type>buttonset</type>
+          <name>bset_PZU89SP1</name>
+          <buttonset>
+            <id>c585145d-d3f3-4246-a997-2db05e26d2ae</id>
+            <name>bset_PZU89SP1</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>c43c2ff2-a503-4abb-b6c9-6c7616a7e4e3</id>
+                <name>but_back_customer_address</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <active>true</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>9bb65095-43e8-4b3b-a5cf-4f5d187ebb7e</id>
+          <position>box_2KB5PP26</position>
+          <type>header</type>
+          <name>hrd_R232RT64</name>
+          <header>
+            <id>9355cbcd-46b8-4e09-844f-f62730f9ef83</id>
+            <name>hrd_R232RT64</name>
+            <type>header1</type>
+            <label>Customer details - address</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>09d764ac-1b44-4099-9af9-c957d40b18cc</id>
+          <position>box_LUM8GL25</position>
+          <type>propertysearch</type>
+          <name>ps_existing_customer</name>
+          <searchwidget class="PropertySearch">
+            <id>1d1d311b-933a-4777-aee2-b6cade667d87</id>
+            <fields>
+              <WidgetField>
+                <id>89504036-db1b-4f42-b237-ff151d2ef7a2</id>
+                <label>Street name</label>
+                <name>ps_customerdetails_txt_streetname</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>false</required>
+                <message>Must be over 2 characters</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>streetname</customalias>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>streetname</fieldtype>
+              </WidgetField>
+              <WidgetField>
+                <id>e6d500b5-ed8f-47f0-b1ca-163826dbe059</id>
+                <label>Postcode</label>
+                <name>ps_customerdetails_txt_postcode</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>false</required>
+                <message>Must be over 2 characters</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>postcode</customalias>
+                <classname>pc_regex</classname>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>postcode</fieldtype>
+              </WidgetField>
+            </fields>
+            <name>ps_existing_customer</name>
+            <index>0</index>
+            <performsearch>
+              <id>2bf35c65-5ee3-4f3e-a9ec-7ed6b97b6443</id>
+              <label>Search</label>
+              <classname>btn-continue</classname>
+              <action>propertysearch</action>
+              <selector>.ps_WJ32IL85</selector>
+              <active>true</active>
+            </performsearch>
+            <displayname>Property search</displayname>
+            <setid>false</setid>
+            <loaddata>true</loaddata>
+            <loadpage>provide_details_address</loadpage>
+            <required>false</required>
+            <message></message>
+            <active>true</active>
+          </searchwidget>
+        </Widget>
+        <Widget>
+          <id>95d1f3ce-0bd8-49ea-9b5f-fdf3ff799a0d</id>
+          <position>box_LUM8GL25</position>
+          <type>buttonset</type>
+          <name>bset_C9340QX7</name>
+          <buttonset>
+            <id>66333e5a-5305-4e98-9f6e-c1509f02eff5</id>
+            <name>bset_C9340QX7</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>61270338-456f-4a3e-b7ad-79341b474a6d</id>
+                <name>but_property_notfound_customer</name>
+                <label>Property not found</label>
+                <classname>btn-continue</classname>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>bacdd491-cb72-4984-a013-d1fcc30a2048</id>
+          <position>box_LUM8GL25</position>
+          <type>spacer</type>
+          <name>spr_BS82VGR3</name>
+          <spacer>
+            <id>3bcc803b-c55f-4bbe-b6c3-414cfa27d128</id>
+            <name>spr_BS82VGR3</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>da21d8d8-971d-4896-a064-3a965ae0e8c7</id>
+          <position>box_3QX5WXW6</position>
+          <type>header</type>
+          <name>hrd_9QQ2DGF1</name>
+          <header>
+            <id>49ff4dbc-c56e-4892-bbb7-998c814f9107</id>
+            <name>hrd_9QQ2DGF1</name>
+            <type>header2</type>
+            <label>    Address details</label>
+            <classname>margin-33</classname>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>ebbad24a-ae8c-40d9-b4e7-1b0e929f0dca</id>
+          <position>box_ZXT2APQ8</position>
+          <type>advancedhtml</type>
+          <name>ahtm_edit_manual_customerdetails</name>
+          <html>
+            <id>8f281c79-7e55-4daa-a496-55d0ce61ab59</id>
+            <name>ahtm_edit_manual_customerdetails</name>
+            <content>&lt;button class=&apos;btn-gov&apos; id=&quot;edit_manually_customerdetails_provide&quot;&gt;Edit manually&lt;/button&gt;</content>
+            <active>false</active>
+            <classname>margin-33</classname>
+          </html>
+        </Widget>
+        <Widget>
+          <id>ac3e38f1-0451-495c-9993-d5bea0a07f66</id>
+          <position>box_ZXT2APQ8</position>
+          <type>advancedhtml</type>
+          <name>ahtm_cancel_edit_manual_customerdetails</name>
+          <html>
+            <id>50ad8801-1a16-43b1-b755-3493ea3e8ac2</id>
+            <name>ahtm_cancel_edit_manual_customerdetails</name>
+            <content>&lt;button class=&apos;btn-gov&apos; id=&quot;cancel_edit_manually_customerdetails&quot;&gt;Cancel edit&lt;/button&gt;</content>
+            <active>false</active>
+            <classname>margin-33</classname>
+          </html>
+        </Widget>
+        <Widget>
+          <id>5eba7332-38d3-4b0e-93e1-8a4abc343548</id>
+          <position>box_ZXT2APQ8</position>
+          <type>text</type>
+          <name>txt_p_uprn</name>
+          <field>
+            <id>931ef753-e3c6-445f-99ff-768eb17e1ffd</id>
+            <label>UPRN</label>
+            <name>txt_p_uprn</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-UPRN</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>4f4f780f-eb97-48f4-b749-67c69fb2d836</id>
+          <position>box_ZXT2APQ8</position>
+          <type>text</type>
+          <name>num_p_streetnumber</name>
+          <field>
+            <id>b9025266-2a10-4dab-bbb1-c073c4c70d72</id>
+            <label>Street number</label>
+            <name>num_p_streetnumber</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-AddressNumber</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>36dbf9aa-fbb1-40f3-98b1-cc375f7b4c3d</id>
+          <position>box_ZXT2APQ8</position>
+          <type>text</type>
+          <name>txt_p_streetname</name>
+          <field>
+            <id>3ba7484d-3389-4983-a1fb-856ab923fef0</id>
+            <label>Street name</label>
+            <name>txt_p_streetname</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-AddressLine1</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>cd25ae4d-b2fe-4ac8-95d4-dd1878d2377e</id>
+          <position>box_ZXT2APQ8</position>
+          <type>text</type>
+          <name>txt_p_town</name>
+          <field>
+            <id>4ba5728b-8299-432a-9dd2-4af302c6b838</id>
+            <label>Town</label>
+            <name>txt_p_town</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Town</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>d7dfab2a-a861-4b81-a757-a09342637013</id>
+          <position>box_ZXT2APQ8</position>
+          <type>text</type>
+          <name>txt_p_postcode</name>
+          <field>
+            <id>f54bdb3d-ab59-4b0f-8a08-4895fc38529c</id>
+            <label>Postcode</label>
+            <name>txt_p_postcode</name>
+            <type>text</type>
+            <maxlength>8</maxlength>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <pattern>^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9][abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$</pattern>
+            <message>Please enter correct postcode</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Postcode</mapfrom>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>e3cccb5d-61ef-4226-bd7f-04bae0c381da</id>
+          <position>box_ZXT2APQ8</position>
+          <type>spacer</type>
+          <name>spr_J648MQ64</name>
+          <spacer>
+            <id>542984ee-eaaa-45ff-bdab-c389cf2df6cf</id>
+            <name>spr_J648MQ64</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>dd8c59a9-762b-46a0-a7e7-bd4b3ed77a78</id>
+          <position>box_ZXT2APQ8</position>
+          <type>buttonset</type>
+          <name>bset_UDW7C348</name>
+          <buttonset>
+            <id>904a3ca5-44b7-48f2-a112-158951db9a2f</id>
+            <name>bset_UDW7C348</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>ef20cf0c-1822-4409-ba5d-484bbbb6ebac</id>
+                <name>but_continue_customer_address</name>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <moveto>complete</moveto>
+                <active>true</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>4fb0c2e8-e1a8-4662-91fa-b5f535b80260</id>
+          <position>box_XZE8UEJ8</position>
+          <type>header</type>
+          <name>hrd_QKG0JNK6</name>
+          <header>
+            <id>9790c053-eccb-4807-9860-af93187db940</id>
+            <name>hrd_QKG0JNK6</name>
+            <type>header3</type>
+            <label>Temp street search fields</label>
+            <active>false</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>68cb1931-078d-4e09-b17f-e6ddfa587ed9</id>
+          <position>box_XZE8UEJ8</position>
+          <type>text</type>
+          <name>txt_temp_uprn_customerdetails</name>
+          <field>
+            <id>a32be864-c966-411a-91ce-727dce276be4</id>
+            <label>UPRN</label>
+            <name>txt_temp_uprn_customerdetails</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-UPRN</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>5e160560-06ad-4910-9032-da9f3bd46559</id>
+          <position>box_XZE8UEJ8</position>
+          <type>text</type>
+          <name>txt_temp_streetnumber_customerdetails</name>
+          <field>
+            <id>6396004f-e450-4acc-ad29-6c0bb185b4f7</id>
+            <label>Street number</label>
+            <name>txt_temp_streetnumber_customerdetails</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-AddressNumber</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>0c30c62b-8474-4f1a-9e9e-1734bfc3815e</id>
+          <position>box_XZE8UEJ8</position>
+          <type>text</type>
+          <name>txt_temp_streetname_customerdetails</name>
+          <field>
+            <id>01d01645-5a61-422e-a9ab-3ea1048596af</id>
+            <label>Street name</label>
+            <name>txt_temp_streetname_customerdetails</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-AddressLine1</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>db4a420d-324f-42f3-abef-441c3ea81a09</id>
+          <position>box_XZE8UEJ8</position>
+          <type>text</type>
+          <name>txt_temp_town_customerdetails</name>
+          <field>
+            <id>c3ba3587-c460-4e76-9cb3-034d22558948</id>
+            <label>Town</label>
+            <name>txt_temp_town_customerdetails</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-City</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>cbf932ec-14a4-4e3a-919a-1772565df7c0</id>
+          <position>box_XZE8UEJ8</position>
+          <type>text</type>
+          <name>txt_temp_postcode_customerdetails</name>
+          <field>
+            <id>c0f10596-5b3d-43b4-910b-b2cf847c9b45</id>
+            <label>Postcode</label>
+            <name>txt_temp_postcode_customerdetails</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>profile-Postcode</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>f0157877-b0b4-48a2-b1c5-a44d8b9b632a</id>
+      <template>
+        <id>3c6b4c9a-7f85-4b80-bcf3-83e35ca781b1</id>
+        <areas>
+          <Area>
+            <id>6b7cde60-9576-491b-86ca-b6e1606c4396</id>
+            <name>area_newcust_header</name>
+            <boxes>
+              <Box>
+                <id>d6e53039-d900-4d9b-9382-c8fc31b5a1e6</id>
+                <name>box_XAW9OAH1</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>768fd044-7861-40a6-ba34-53d9f2141c03</id>
+            <name>area_XD26TFM6</name>
+            <boxes>
+              <Box>
+                <id>da63b887-ab9c-49d0-b9a3-6cc55c32f0f6</id>
+                <name>box_FYX2KLB5</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>324f5ea0-58d3-45f0-ac07-6da3f306a346</id>
+            <name>area_addresspanel</name>
+            <boxes>
+              <Box>
+                <id>b3166792-b2e9-4179-9d9b-48ff1562baeb</id>
+                <name>box_GLQ3NSH1</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>314157de-a3d2-410a-b34f-5651c7b292ea</id>
+            <name>area_contactpanel</name>
+            <boxes>
+              <Box>
+                <id>2aeb4a14-d8d9-43f9-b150-463930b2def0</id>
+                <name>box_M2R5LJS9</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>create_individual_details</name>
+      <displayname>Create individual - details</displayname>
+      <active>true</active>
+      <access>agent</access>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>4f92a2a6-21fc-44d0-9c8f-206498e25e83</id>
+          <position>box_XAW9OAH1</position>
+          <type>buttonset</type>
+          <name>bset_4JQ413T4</name>
+          <buttonset>
+            <id>d85e0da7-de55-41f9-8dd4-66262c678ada</id>
+            <name>bset_4JQ413T4</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>2b51e9ca-3028-4e1c-92b1-e341bceb43c0</id>
+                <name>but_back_create_individual</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <moveto>provide_details</moveto>
+                <active>true</active>
+                <pageoff>create_individual_address</pageoff>
+              </Button>
+              <Button>
+                <id>748851bd-bd87-4a33-926f-6ceaaa53c4ec</id>
+                <name>but_save_create_individual</name>
+                <label>Save</label>
+                <classname>btn-back saveform</classname>
+                <active>false</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>3614c746-d74f-4c65-9f51-b67a5bcd23da</id>
+          <position>box_XAW9OAH1</position>
+          <type>header</type>
+          <name>hrd_contname</name>
+          <header>
+            <id>aa5bac96-8f25-43b2-aa7c-2da4ff6b6db7</id>
+            <name>hrd_contname</name>
+            <type>header1</type>
+            <label>Create new individual - details</label>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>5093dae8-437e-4f6e-8bbf-471c15b01fe6</id>
+          <position>box_FYX2KLB5</position>
+          <type>header</type>
+          <name>hrd_namedetails</name>
+          <header>
+            <id>52431040-8078-4148-8fa5-bc16d345da08</id>
+            <name>hrd_namedetails</name>
+            <type>header2</type>
+            <label>Personal details</label>
+            <classname>margin-33</classname>
+            <active>true</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>c8215962-22cc-4c58-8eca-fba76ba6f389</id>
+          <position>box_FYX2KLB5</position>
+          <type>select</type>
+          <name>sel_customer_type_new</name>
+          <field>
+            <id>5edc9adf-d828-4921-bb4b-327dd984aaa9</id>
+            <label>Customer type</label>
+            <name>sel_customer_type_new</name>
+            <type>select</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>You must provide customer type</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <options>
+              <Option>
+                <id>dd962da3-77c1-4424-ade8-cc3c63d9369e</id>
+                <translations/>
+                <value>MOP</value>
+                <label>Member of the Public</label>
+                <active>true</active>
+                <selected>true</selected>
+              </Option>
+              <Option>
+                <id>f9e798b7-31a7-491d-b723-4b2327d76acd</id>
+                <translations/>
+                <value>BUS</value>
+                <label>Bussiness</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>482784ca-dd8b-4ff8-8ef3-b78e3b61b53d</id>
+                <translations/>
+                <value>COMC</value>
+                <label>Community Council</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>827bdc46-3847-44ef-9659-d5434a8330e0</id>
+                <translations/>
+                <value>CONT</value>
+                <label>Contractor</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>e74496e5-76c7-4139-8b9d-63eb5780de41</id>
+                <translations/>
+                <value>CEMP</value>
+                <label>Council Employee</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>a6bc10bb-5e46-4ea5-bfa7-c254e32d591a</id>
+                <translations/>
+                <value>CREW</value>
+                <label>Crew or Inspector</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>6221537d-abe6-4eb2-ae53-2f1a659c9173</id>
+                <translations/>
+                <value>EMER</value>
+                <label>Emergency Services</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>f9e02360-e621-44da-a923-f0a361bfc6c2</id>
+                <translations/>
+                <value>EVEN</value>
+                <label>Event Organiser</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>b3ea0e8c-9489-43e0-bd5a-d85a7ab03700</id>
+                <translations/>
+                <value>GARD</value>
+                <label>Garden Aid</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>0e90b978-4605-4cab-9fe9-d159c598d43c</id>
+                <translations/>
+                <value>MEMB</value>
+                <label>Member/Councillor</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>47e1137a-1fa6-4621-aa4e-b4f45efc517b</id>
+                <translations/>
+                <value>MP</value>
+                <label>MP/MEP</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>7f8d0732-730a-4e47-b555-f061af11c861</id>
+                <translations/>
+                <value>PLAN</value>
+                <label>Planet</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>314ddcd1-41cf-4a11-bf7a-f820c4458a90</id>
+                <translations/>
+                <value>TW01</value>
+                <label>Trade Waste Customer </label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>1d94c991-88b3-491e-8eef-036927387a4a</id>
+                <translations/>
+                <value>UTIL</value>
+                <label>Utility Complany</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+            </options>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>fad46afd-b908-4cbe-aeab-d3df241e6e3d</id>
+          <position>box_FYX2KLB5</position>
+          <type>text</type>
+          <name>txt_c_forename</name>
+          <field>
+            <id>fc5d25f8-2398-4237-b917-1c839bba35cb</id>
+            <label>First Name</label>
+            <name>txt_c_forename</name>
+            <type>text</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>First name is required</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>07b7b2c9-c5c6-4d99-b4b3-a1f8f6045862</id>
+          <position>box_FYX2KLB5</position>
+          <type>text</type>
+          <name>txt_c_surname</name>
+          <field>
+            <id>2e8ca559-9ee8-4058-96b6-91ca661602e8</id>
+            <label>Last Name</label>
+            <name>txt_c_surname</name>
+            <type>text</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <message>Last name is required</message>
+            <active>true</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>337bbff3-29f7-405e-8791-3174066a8334</id>
+          <position>box_FYX2KLB5</position>
+          <type>email</type>
+          <name>eml_c_email</name>
+          <field>
+            <id>59ce5cfa-fe2b-44eb-b790-dacfce585460</id>
+            <label>Email</label>
+            <helptext>We&apos;ll only use your details to provide you with updates about this case.</helptext>
+            <name>eml_c_email</name>
+            <type>email</type>
+            <size>30</size>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>true</required>
+            <pattern>^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$</pattern>
+            <message>Email is required</message>
+            <active>true</active>
+            <access>agent</access>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>c6ffd3bc-f7f7-461c-b6f1-d7581eabf250</id>
+          <position>box_FYX2KLB5</position>
+          <type>tel</type>
+          <name>tel_c_telephone</name>
+          <field>
+            <id>a08447e2-627c-40c1-8f2b-078c573a2055</id>
+            <label>Phone</label>
+            <name>tel_c_telephone</name>
+            <type>tel</type>
+            <size>30</size>
+            <maxlength>40</maxlength>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <pattern>^(\(?\+?[0-9]*\)?)?[0-9_\- \(\)]*$</pattern>
+            <message>Please enter valid phone number</message>
+            <active>true</active>
+            <access>agent</access>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <classname>txt-gov text-align-right</classname>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>462a1bcc-79b7-4474-89e1-9237c9531e89</id>
+          <position>box_FYX2KLB5</position>
+          <type>buttonset</type>
+          <name>bset_createindividual</name>
+          <buttonset>
+            <id>98a458f7-9474-4245-991f-4ffdec845b22</id>
+            <name>bset_createindividual</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>4c8404e5-ce0a-4ac9-b024-eb8509d662bd</id>
+                <name>but_continue_individual_details</name>
+                <type>next</type>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <active>true</active>
+                <access>agent</access>
+                <pageon>create_individual_address</pageon>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>e8ae9679-76d1-477a-a4f4-1b31444b9662</id>
+      <template>
+        <id>1deb324b-0482-471b-a246-4896c6bbb983</id>
+        <areas>
+          <Area>
+            <id>54ebc073-9199-451d-a609-7262079ced64</id>
+            <name>area_MIG95WC5</name>
+            <boxes>
+              <Box>
+                <id>1789e722-fa91-433d-addd-ab19b5d6f765</id>
+                <name>box_6UT1AN17</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>cdabbe86-6049-4476-88bd-42595022a428</id>
+            <name>area_5SH0YGQ3</name>
+            <boxes>
+              <Box>
+                <id>fdf4bc37-d16e-4094-ae59-4630b10a11b8</id>
+                <name>box_S6J0JW09</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>f5d649e4-77a8-4515-97d5-514560f4e0ca</id>
+            <name>area_XX84FW31</name>
+            <boxes>
+              <Box>
+                <id>565ede00-9706-4e90-8e82-1d106f245477</id>
+                <name>box_0583LJW4</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>fb056b84-a9ee-4d22-b408-c91ff9ef79e2</id>
+            <name>area_9160TH97</name>
+            <boxes>
+              <Box>
+                <id>058c5ef0-4f94-4365-8601-4510c7bf517f</id>
+                <name>box_2AL20459</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>create_individual_address</name>
+      <displayname>Create new customer - address</displayname>
+      <active>true</active>
+      <access>agent</access>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>e199aafc-b5fb-4624-86b4-18f5acc7fa5d</id>
+          <position>box_6UT1AN17</position>
+          <type>buttonset</type>
+          <name>bset_VQU9VX86</name>
+          <buttonset>
+            <id>02a26885-2a69-4035-903e-5f8da138120f</id>
+            <name>bset_VQU9VX86</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>c2254f48-3e24-43ed-b0fd-63e311cc612a</id>
+                <name>but_back_individual_address</name>
+                <type>prev</type>
+                <label>◄ Back</label>
+                <classname>btn-back</classname>
+                <active>true</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>35b88cf2-d4b7-4c25-928a-8c7b0ea59134</id>
+          <position>box_6UT1AN17</position>
+          <type>header</type>
+          <name>hrd_0P11LL22</name>
+          <header>
+            <id>0c4315d1-e07e-4a19-a2f7-dc2a7a0af72f</id>
+            <name>hrd_0P11LL22</name>
+            <type>header1</type>
+            <label>Create new customer - address</label>
+            <active>true</active>
+            <access>agent</access>
+          </header>
+        </Widget>
+        <Widget>
+          <id>22d4aa7a-3afe-4e23-8a70-555e3af66a3a</id>
+          <position>box_S6J0JW09</position>
+          <type>propertysearch</type>
+          <name>ps_individual</name>
+          <searchwidget class="PropertySearch">
+            <id>34581bb2-3a85-410b-a1f4-38b5dec4e74e</id>
+            <fields>
+              <WidgetField>
+                <id>1ff29a6d-4ec2-4f15-9f90-ac734222357c</id>
+                <label>Street name</label>
+                <name>ps_createindividual_txt_streetname</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>false</required>
+                <message>Must be over 2 characters</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>streetname</customalias>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>streetname</fieldtype>
+              </WidgetField>
+              <WidgetField>
+                <id>51b36ba9-09f5-41df-8a21-1aca24e6417b</id>
+                <label>Postcode</label>
+                <name>ps_createindividual_txt_postcode</name>
+                <type>text</type>
+                <checked>false</checked>
+                <readonly>false</readonly>
+                <required>false</required>
+                <message>Must be over 2 characters</message>
+                <active>true</active>
+                <labelposition>above</labelposition>
+                <labelwidth>three</labelwidth>
+                <customalias>postcode</customalias>
+                <classname>pc_regex</classname>
+                <agentonly>false</agentonly>
+                <alwaysrequired>false</alwaysrequired>
+                <fieldtype>postcode</fieldtype>
+              </WidgetField>
+            </fields>
+            <name>ps_individual</name>
+            <index>0</index>
+            <performsearch>
+              <id>df5caf7d-14af-49b5-bbf4-9a183be133b8</id>
+              <label>Search</label>
+              <classname>btn-continue</classname>
+              <action>propertysearch</action>
+              <selector>.ps_6C83VOI2</selector>
+              <active>true</active>
+            </performsearch>
+            <displayname>Address details</displayname>
+            <setid>false</setid>
+            <loaddata>true</loaddata>
+            <loadpage>create_individual_address</loadpage>
+            <required>false</required>
+            <message></message>
+            <access>agent</access>
+            <active>true</active>
+          </searchwidget>
+        </Widget>
+        <Widget>
+          <id>c090e210-8687-48f8-bc91-8b9f0c70e596</id>
+          <position>box_S6J0JW09</position>
+          <type>buttonset</type>
+          <name>bset_E7J4HOY5</name>
+          <buttonset>
+            <id>33e02b11-cb51-4590-9f0d-dd9d0160ddb3</id>
+            <name>bset_E7J4HOY5</name>
+            <classname>left</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>49088652-8a5d-483d-83c1-ca65d1a1e021</id>
+                <name>but_property_notfound</name>
+                <label>Property not found</label>
+                <classname>btn-continue</classname>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>76bdee03-27da-41b0-af6d-54cc50e79c90</id>
+          <position>box_0583LJW4</position>
+          <type>advancedhtml</type>
+          <name>ahtm_edit_manual_createindividual</name>
+          <html>
+            <id>d1010d29-95f8-491a-bea5-45e6dc7b5a22</id>
+            <name>ahtm_edit_manual_createindividual</name>
+            <content>&lt;button class=&apos;btn-link&apos; id=&quot;edit_manually_createindividual&quot;&gt;Edit manually&lt;/button&gt;</content>
+            <active>false</active>
+            <classname>margin-33</classname>
+          </html>
+        </Widget>
+        <Widget>
+          <id>33c909cf-9f0a-4398-a3f8-cb61db54e0cc</id>
+          <position>box_0583LJW4</position>
+          <type>advancedhtml</type>
+          <name>ahtm_cancel_edit_manual_createindividual</name>
+          <html>
+            <id>40231dc2-71c2-4ebd-95bb-026597d05d32</id>
+            <name>ahtm_cancel_edit_manual_createindividual</name>
+            <content>&lt;button class=&apos;btn-link&apos; id=&quot;cancel_edit_manually_createindividual&quot;&gt;Cancel edit&lt;/button&gt;</content>
+            <active>false</active>
+            <classname>margin-33</classname>
+          </html>
+        </Widget>
+        <Widget>
+          <id>5dafef45-99a4-4e64-8107-0e017096ef5e</id>
+          <position>box_0583LJW4</position>
+          <type>text</type>
+          <name>txt_c_uprn</name>
+          <field>
+            <id>7ac3a90e-6f96-4d97-b962-9f23dae8b236</id>
+            <label>UPRN</label>
+            <name>txt_c_uprn</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>ea08cbff-ded6-4148-a650-30f1e11318a4</id>
+          <position>box_0583LJW4</position>
+          <type>text</type>
+          <name>txt_c_addressnumber</name>
+          <field>
+            <id>974d797f-bed3-4685-be0e-7937e0207948</id>
+            <label>Street number</label>
+            <name>txt_c_addressnumber</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-AddressNumber</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>c3a1be83-217d-4bc8-a4e9-060bfb38be1b</id>
+          <position>box_0583LJW4</position>
+          <type>text</type>
+          <name>txt_c_addressline1</name>
+          <field>
+            <id>9dcf0bda-ceee-443e-bbad-28349baf94d5</id>
+            <label>Street name</label>
+            <name>txt_c_addressline1</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>false</active>
+            <access>agent</access>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-AddressLine1</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>c2005ea0-3a2a-4613-9860-94c581d34b9b</id>
+          <position>box_0583LJW4</position>
+          <type>text</type>
+          <name>txt_c_town</name>
+          <field>
+            <id>12063df5-0494-4dd4-9bf7-c39f1bddc287</id>
+            <label>Town</label>
+            <name>txt_c_town</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <active>false</active>
+            <access>agent</access>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Town</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>94a2746d-d56e-46b6-a6bd-16930586ac9f</id>
+          <position>box_0583LJW4</position>
+          <type>text</type>
+          <name>txt_c_postcode</name>
+          <field>
+            <id>8e246969-1364-4697-b5e2-27b59ddfe630</id>
+            <label>Postcode</label>
+            <name>txt_c_postcode</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>true</readonly>
+            <required>false</required>
+            <pattern>^(([gG][iI][rR] {0,}0[aA]{2})|((([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y]?[0-9][0-9]?)|(([a-pr-uwyzA-PR-UWYZ][0-9][a-hjkstuwA-HJKSTUW])|([a-pr-uwyzA-PR-UWYZ][a-hk-yA-HK-Y][0-9][abehmnprv-yABEHMNPRV-Y]))) {0,}[0-9][abd-hjlnp-uw-zABD-HJLNP-UW-Z]{2}))$</pattern>
+            <message>Please enter correct postcode</message>
+            <active>false</active>
+            <access>agent</access>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Postcode</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>595e4030-c09b-4463-a3f8-b1aa1a1f82b8</id>
+          <position>box_0583LJW4</position>
+          <type>spacer</type>
+          <name>spr_Q974B9Y9</name>
+          <spacer>
+            <id>04b47c5a-f6a0-442d-abff-a22ce2c8c1f2</id>
+            <name>spr_Q974B9Y9</name>
+            <type>br</type>
+            <active>true</active>
+          </spacer>
+        </Widget>
+        <Widget>
+          <id>acad42a6-bfdd-43b3-b98e-122dc6ba89cf</id>
+          <position>box_0583LJW4</position>
+          <type>buttonset</type>
+          <name>bset_YOA9CRW4</name>
+          <buttonset>
+            <id>58f2421d-9687-4b01-aa9a-95f4f1cf555c</id>
+            <name>bset_YOA9CRW4</name>
+            <classname>left margin-33</classname>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>22aff3e6-77e6-429a-93a1-13ec6c82882d</id>
+                <name>but_continue_individual_address</name>
+                <label>Continue</label>
+                <classname>btn-continue</classname>
+                <moveto>complete</moveto>
+                <active>false</active>
+                <access>agent</access>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+        <Widget>
+          <id>e53b03ed-a405-458c-8008-98d2a2ddfcf3</id>
+          <position>box_2AL20459</position>
+          <type>header</type>
+          <name>hrd_HNS5CQU2</name>
+          <header>
+            <id>763c7837-c7b6-4440-8831-0d7153c61457</id>
+            <name>hrd_HNS5CQU2</name>
+            <type>header3</type>
+            <label>Temp street search fields (individual)</label>
+            <active>false</active>
+          </header>
+        </Widget>
+        <Widget>
+          <id>7dcd6978-59df-4adc-bee3-1070cec9bf9b</id>
+          <position>box_2AL20459</position>
+          <type>text</type>
+          <name>txt_temp_streetnumber_createindividual</name>
+          <field>
+            <id>69a0c95a-f875-43db-b54a-ac3f603c9a52</id>
+            <label>Street number</label>
+            <name>txt_temp_streetnumber_createindividual</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-AddressNumber</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>98947392-83db-476a-95ac-ede48a5f8f08</id>
+          <position>box_2AL20459</position>
+          <type>text</type>
+          <name>txt_temp_streetname_createindividual</name>
+          <field>
+            <id>a831c521-0873-48a8-8fd4-32ec6311f880</id>
+            <label>Street name</label>
+            <name>txt_temp_streetname_createindividual</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-AddressLine1</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>964ac49d-4b0d-431e-8ee6-d8d6115616c6</id>
+          <position>box_2AL20459</position>
+          <type>text</type>
+          <name>txt_temp_town_createindividual</name>
+          <field>
+            <id>2d313fff-bc55-49d2-a121-aa4686ae766c</id>
+            <label>Town</label>
+            <name>txt_temp_town_createindividual</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Town</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>d1d7307d-f44a-49a2-836b-b9e01c77afc0</id>
+          <position>box_2AL20459</position>
+          <type>text</type>
+          <name>txt_temp_postcode_createindividual</name>
+          <field>
+            <id>1c3ed3ef-def0-4380-bda6-f3e9ca13c6e8</id>
+            <label>Postcode</label>
+            <name>txt_temp_postcode_createindividual</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>false</active>
+            <labelposition>left</labelposition>
+            <labelwidth>four</labelwidth>
+            <mapfrom>property-Postcode</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>9f044c9b-50a1-41f5-a768-687d07254a0b</id>
+      <name>logics</name>
+      <displayname>Logics</displayname>
+      <active>false</active>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>56548e0a-92e2-4f20-b1f7-a4b559e3a8f0</id>
+          <position>default</position>
+          <type>radio</type>
+          <name>rad_viewmode</name>
+          <field>
+            <id>28ed56cc-3154-4ab6-9ba7-f962ab8e0cd7</id>
+            <label>viewmode</label>
+            <name>rad_viewmode</name>
+            <type>radio</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <mapfrom>viewmode</mapfrom>
+            <verticalOptions>false</verticalOptions>
+            <options>
+              <Option>
+                <id>32c8027c-0274-4dc8-b97f-f0732248675e</id>
+                <translations/>
+                <value>C</value>
+                <label>Create</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+              <Option>
+                <id>eb6c6733-c668-4f8a-89cc-6504693c6a99</id>
+                <translations/>
+                <value>U</value>
+                <label>Update</label>
+                <active>true</active>
+                <selected>false</selected>
+                <sectionon>area_customer_name</sectionon>
+                <on>eml_subscriber,txt_c_addressnumber,txt_c_addressline1,txt_c_town,txt_c_postcode</on>
+                <off>but_continue_citizen_details,but_submit_citizen_details,cs_customer_search,but_individual_notfound,but_updatedetails,but_continue_selectindividual,but_individual_address,but_continue_customerdetails_r,ps_existing_customer,but_property_notfound_customer,but_continue_customer_address,but_continue_individual_details,ps_individual,but_property_notfound,but_continue_individual_address</off>
+              </Option>
+              <Option>
+                <id>1918639e-05c4-44f6-a153-ffab2a3f0f97</id>
+                <translations/>
+                <value>R</value>
+                <label>Read</label>
+                <active>true</active>
+                <selected>false</selected>
+                <sectionon>area_customer_name</sectionon>
+                <on>eml_subscriber,txt_c_addressnumber,txt_c_addressline1,txt_c_town,txt_c_postcode</on>
+                <off>but_continue_citizen_details,but_submit_citizen_details,cs_customer_search,but_individual_notfound,but_updatedetails,but_continue_selectindividual,but_individual_address,but_continue_customerdetails_r,ps_existing_customer,but_property_notfound_customer,but_continue_customer_address,but_continue_individual_details,ps_individual,but_property_notfound,but_continue_individual_address</off>
+              </Option>
+              <Option>
+                <id>919d414f-f02d-45e8-8b78-ed92937039eb</id>
+                <translations/>
+                <value>D</value>
+                <label>Debug</label>
+                <active>true</active>
+                <selected>false</selected>
+              </Option>
+            </options>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>8bde14dc-6a15-4f6b-a617-80a4948a0657</id>
+          <position>default</position>
+          <type>text</type>
+          <name>interaction_id</name>
+          <field>
+            <id>ca32315f-65f9-46f4-8b3c-6691e7107f69</id>
+            <label>Interaction id</label>
+            <name>interaction_id</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>interactionid</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>7bcae0aa-2724-4b43-86ee-9bdd3a993d7d</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_access</name>
+          <field>
+            <id>135565e8-c3b2-43ff-a95c-bee11c538e28</id>
+            <label>Access by</label>
+            <name>txt_access</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>access</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>115e3417-1773-4191-bc9b-aa9367192b92</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_subject_code</name>
+          <field>
+            <id>494fe787-3caa-42c4-a6c4-a294ffeec6a7</id>
+            <label>txt_subject_code</label>
+            <name>txt_subject_code</name>
+            <type>text</type>
+            <checked>false</checked>
+            <value>All</value>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>1a9375a9-84fc-4c32-b20a-3e66719a91b1</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_customerID</name>
+          <field>
+            <id>9c36bf7c-b33f-443d-955a-873aad019c0c</id>
+            <label>Customer  ID</label>
+            <name>txt_customerID</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <mapfrom>customerid</mapfrom>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>803e45ab-ed31-40d0-887b-5ae5bdb331a1</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_customerid_subscriber</name>
+          <field>
+            <id>577e9670-bf7a-49c8-9135-c51fa5e1a35b</id>
+            <label>Customer ID (subscriber)</label>
+            <name>txt_customerid_subscriber</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>40288264-e2c0-48fd-a5bc-b37accd8002f</id>
+          <position>default</position>
+          <type>text</type>
+          <name>email_subscriber</name>
+          <field>
+            <id>9de8d26b-6001-4edc-8fac-cd449526b6d8</id>
+            <label>email_subscriber</label>
+            <name>email_subscriber</name>
+            <type>text</type>
+            <checked>false</checked>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>f72fc56e-d282-43cc-957e-7c4a75f6c4e1</id>
+          <position>default</position>
+          <type>text</type>
+          <name>txt_eventcode</name>
+          <field>
+            <id>fe5d082b-2a8b-4981-ba53-488f18137f19</id>
+            <label>txt_eventcode</label>
+            <name>txt_eventcode</name>
+            <type>text</type>
+            <checked>false</checked>
+            <value>4100003</value>
+            <readonly>false</readonly>
+            <required>false</required>
+            <active>true</active>
+            <labelposition>above</labelposition>
+            <labelwidth>three</labelwidth>
+            <persist>always</persist>
+            <agentonly>false</agentonly>
+            <alwaysrequired>false</alwaysrequired>
+          </field>
+        </Widget>
+        <Widget>
+          <id>4e6d929b-3e0d-4e2c-9660-3352c1e0d797</id>
+          <position>default</position>
+          <type>buttonset</type>
+          <name>bset_XXN6MXQ2</name>
+          <buttonset>
+            <id>214be5fd-fbc6-4109-9adc-d4a9d2135b33</id>
+            <name>bset_XXN6MXQ2</name>
+            <active>true</active>
+            <buttons>
+              <Button>
+                <id>849b8a0c-13af-4eca-97ae-811a41aa164d</id>
+                <name>but_N306QXE4</name>
+                <type>prev</type>
+                <label>Previous</label>
+                <active>true</active>
+              </Button>
+              <Button>
+                <id>e37a1ec5-77f4-4450-9795-3d8affb2d6a4</id>
+                <name>but_PHY839O9</name>
+                <type>next</type>
+                <label>Next</label>
+                <active>true</active>
+              </Button>
+            </buttons>
+          </buttonset>
+        </Widget>
+      </widgets>
+      <navaction></navaction>
+    </Page>
+    <Page>
+      <id>6b54ef84-92b4-4393-a9ef-7c56d56cc739</id>
+      <template>
+        <id>44eb0fbf-46e6-4fd5-af94-d33f830eabb0</id>
+        <areas>
+          <Area>
+            <id>3700ef6a-40a2-487c-8a33-312110c45e45</id>
+            <name>area_YB937LD8</name>
+            <boxes>
+              <Box>
+                <id>7fbaaffc-445b-4df8-af38-67fe2e3b1447</id>
+                <name>box_complete</name>
+                <size>last twelve</size>
+                <classname>box-green</classname>
+                <fieldset>false</fieldset>
+                <active>false</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+          <Area>
+            <id>ff4141dc-af1f-4808-9487-40aeca81bf35</id>
+            <name>area_OJO2Q962</name>
+            <boxes>
+              <Box>
+                <id>716fd809-cbb1-48b2-9734-fa1356bcd46a</id>
+                <name>box_1NQ3TX11</name>
+                <size>last twelve</size>
+                <fieldset>false</fieldset>
+                <active>true</active>
+              </Box>
+            </boxes>
+            <fieldset>false</fieldset>
+            <active>true</active>
+          </Area>
+        </areas>
+      </template>
+      <name>complete</name>
+      <displayname>Complete</displayname>
+      <active>true</active>
+      <child>false</child>
+      <displayheader>false</displayheader>
+      <widgets>
+        <Widget>
+          <id>7012735c-558a-4321-85b6-30be9f72624b</id>
+          <position>box_complete</position>
+          <type>html</type>
+          <name>html_BAE2EN04</name>
+          <html>
+            <id>42d08ad9-a52c-47b0-8a34-8c350a9c639b</id>
+            <name>html_BAE2EN04</name>
+            <content>&lt;p&gt;Thank you for submitting a general enquiry.&lt;/p&gt;&#xd;
+&#xd;
+&lt;p&gt;The case reference is:&amp;nbsp;&amp;nbsp;[dform_caseid].&lt;/p&gt;&#xd;
+&#xd;
+&lt;p&gt;We will send you a confirmation email if you have provided an email address.&lt;/p&gt;&#xd;
+</content>
+            <active>true</active>
+            <classname>box-h2 text-align-center</classname>
+          </html>
+        </Widget>
+      </widgets>
+    </Page>
+  </pages>
+  <styles>
+    <FormResource>
+      <id>3ebe59da-f236-4924-bf94-fbb7907d9839</id>
+      <url>https://yourcouncilurl.com/laganresources/css/gov.0.3.css</url>
+    </FormResource>
+    <FormResource>
+      <id>240ebed8-a91b-4515-bce7-9e314ea8bc33</id>
+      <url>https://yourcouncilurl.com/laganresources/css/style-4.css</url>
+    </FormResource>
+  </styles>
+  <scripts>
+    <FormResource>
+      <id>7bd5d116-2729-4478-9f60-817a6f4d8988</id>
+      <url>https://yourcouncilurl.com/laganresources/js/gov.0.3.js</url>
+    </FormResource>
+    <FormResource>
+      <id>4b521411-d9bb-4d56-ad95-307692e351ac</id>
+      <url>https://yourcouncilurl.com/laganresources/js/map.js</url>
+    </FormResource>
+    <FormResource>
+      <id>c202808b-a99b-4751-9b26-53440ea75f78</id>
+      <url>https://yourcouncilurl.com/laganresources/js/style-4.js</url>
+    </FormResource>
+  </scripts>
+  <style>.text-bold {&#xd;
+    font-weight:bold !important;&#xd;
+}&#xd;
+&#xd;
+#dform_container legend {&#xd;
+	font-weight:bold !important;&#xd;
+}&#xd;
+&#xd;
+.bold-border{&#xd;
+    border: 5px solid #aaaaaa !important;&#xd;
+}&#xd;
+&#xd;
+.esriPopup .sizer {&#xd;
+    position: relative;&#xd;
+    width: 270px;&#xd;
+    z-index: 1;&#xd;
+}&#xd;
+&#xd;
+.esriPopup .contentPane {&#xd;
+    background-color: #F5F5F5;&#xd;
+    color: #000;&#xd;
+}&#xd;
+&#xd;
+.summary-text {&#xd;
+    font-size: 1.5em;&#xd;
+    color: #999999 !important;&#xd;
+}&#xd;
+&#xd;
+.put-border {&#xd;
+    border-style : solid;&#xd;
+    border-color: #999999;&#xd;
+    padding-left: 20px;&#xd;
+}&#xd;
+&#xd;
+.margin-button {&#xd;
+    margin-left: 7px !important;&#xd;
+    margin-top: 7px !important;&#xd;
+}&#xd;
+&#xd;
+.standard-text {&#xd;
+    font-size: 1.5em;&#xd;
+}&#xd;
+&#xd;
+.fileuploadobject{&#xd;
+   display: none !important&#xd;
+}&#xd;
+&#xd;
+.force_green {&#xd;
+    background-color: #268e1f !important;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+</style>
+  <script>var update_individual_result =false;&#xd;
+var create_individual_result =false;&#xd;
+var update_individual_details = false;&#xd;
+var hideclass = &apos;fileuploadobject&apos;;&#xd;
+var uprn_update = false;&#xd;
+var uprn_create = false;&#xd;
+var ps_property_customer = false;&#xd;
+var ps_property_individual = false;&#xd;
+var cs_customer_search = false;&#xd;
+var not_associated = false;&#xd;
+var email_subscriber = null;&#xd;
+&#xd;
+// Jquery event delegate so when the confirm location button clicked it can call another function&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_fieldChange&apos;).on(&apos;_KDF_fieldChange&apos;, function(event, kdf, field) {&#xd;
+	// fires when a field has been changes by the framework&#xd;
+	&#xd;
+	console.log(field.name);&#xd;
+	&#xd;
+});&#xd;
+&#xd;
+$(&apos;#but_request_a_litter_bin_next&apos;).click(function(){&#xd;
+    setAssociatedObj(&apos;C1&apos;, KDF.getVal(&apos;txt_customerID&apos;));&#xd;
+});&#xd;
+&#xd;
+/*function regexSearch(regex){&#xd;
+    //KS E.G.: regexSearch(&quot;[0-9A-Za-z ]{3,}&quot;)&#xd;
+	$(&quot;.search-gov input:text, .apply-regex, #dform_widget_txt_postcode&quot;).attr(&apos;pattern&apos;,regex);&#xd;
+}*/&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_ready&apos;).on(&apos;_KDF_ready&apos;, function(event, kdf) {&#xd;
+    /*KS: entire code for adding gov.uk styles and also for applying default styles*/&#xd;
+    defaultNewStyle([&quot;all&quot;,&quot;search-no-results&quot;]);&#xd;
+    applyNewStyle();&#xd;
+    &#xd;
+      if ($(&apos;.txta-gov&apos;).is(&apos;:visible&apos;)) {&#xd;
+&#xd;
+              var maxLength = $(&apos;#dform_widget_txta_your_enquiry&apos;).attr(&apos;maxlength&apos;);&#xd;
+              console.log(maxLength)&#xd;
+              &#xd;
+              $(&apos;.txta-length-message&apos;).html(maxLength + &apos; characters left&apos;);&#xd;
+        }&#xd;
+    &#xd;
+    if (KDF.kdf().access === &apos;citizen&apos; &amp;&amp; KDF.kdf().form.readonly) {&#xd;
+        KDF.showNav();&#xd;
+    }&#xd;
+    else {&#xd;
+        if ( KDF.getVal(&apos;rad_viewmode&apos;) != &apos;R&apos; &amp;&amp; KDF.getVal(&apos;rad_viewmode&apos;) != &apos;U&apos; ) {&#xd;
+            console.log(&apos;hide navigation&apos;);&#xd;
+            KDF.hideNav();&#xd;
+            KDF.hideControls();&#xd;
+        } else {&#xd;
+            $(&apos;#dform_widget_le_gis_reversegeo&apos;).hide();&#xd;
+            console.log(&apos;show navigation&apos;);&#xd;
+            KDF.showNav();&#xd;
+            console.log(&apos;make read only&apos;);&#xd;
+            KDF.makeReadonly();&#xd;
+        }&#xd;
+    }&#xd;
+    &#xd;
+    $(&apos;#dform_mp_general_enquiry&apos;).off(&apos;click&apos;, &apos;.copyaddressvalue&apos;).on(&apos;click&apos;, &apos;.copyaddressvalue&apos;, function() {&#xd;
+        console.log (&apos;accessed by : &apos;+KDF.access);&#xd;
+            console.log(&apos;retrieved value for address : &apos;+KDF.getVal(&apos;txt_r_streetnumber&apos;) +&apos; &apos;+ KDF.getVal(&apos;txt_r_streetname&apos;) +&apos; &apos;+ KDF.getVal(&apos;txt_r_town&apos;) +&apos; &apos;+ KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+            &#xd;
+            KDF.setVal(&apos;num_p_streetnumber&apos;,KDF.getVal(&apos;txt_r_streetnumber&apos;));&#xd;
+            KDF.setVal(&apos;txt_p_streetname&apos;,KDF.getVal(&apos;txt_r_streetname&apos;));    &#xd;
+            KDF.setVal(&apos;txt_p_town&apos;,KDF.getVal(&apos;txt_r_town&apos;));    &#xd;
+            KDF.setVal(&apos;txt_p_postcode&apos;,KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+            KDF.showPage(&apos;provide_details_address&apos;);&#xd;
+  &#xd;
+            KDF.gotoNextPage();&#xd;
+    });&#xd;
+    &#xd;
+    &#xd;
+    if (KDF.getVal(&apos;txt_access&apos;) === &apos;agent&apos;) {&#xd;
+        if (KDF.getVal(&apos;txt_customerID&apos;)) {&#xd;
+        KDF.showSection(&apos;area_customer_name&apos;);&#xd;
+        KDF.showSection(&apos;area_customer_contacts&apos;);&#xd;
+        KDF.showWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+        KDF.showWidget(&apos;but_individual_address&apos;);&#xd;
+        KDF.showWidget(&apos;hrd_customerdetails&apos;);&#xd;
+        KDF.setVal(&apos;customerID&apos;,KDF.getVal(&apos;txt_customerID&apos;));&#xd;
+        }&#xd;
+    } else if (KDF.getVal(&apos;txt_access&apos;) === &apos;citizen&apos;) {&#xd;
+        KDF.showWidget(&apos;but_submit_citizen_details&apos;);&#xd;
+        KDF.showWidget(&apos;eml_subscriber&apos;);&#xd;
+        &#xd;
+        KDF.setVal(&apos;txt_customerid_subscriber&apos;,KDF.getVal(&apos;txt_customerID&apos;));&#xd;
+    }&#xd;
+    &#xd;
+    //regexSearch(&quot;[0-9A-Za-z ]{3,}&quot;);&#xd;
+&#xd;
+});  // End of KDF_ready&#xd;
+&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_custom&apos;).on(&apos;_KDF_custom&apos;, function( event, kdf, response, action) {&#xd;
+    /* action performed when CA  create-indivudal-new is called */&#xd;
+    console.log(&apos;action :&apos;+action);&#xd;
+    console.log(&apos;response :&apos;+response.data.txt_customerID);&#xd;
+    &#xd;
+	if (action == &apos;create-individual-new&apos;) {&#xd;
+        setCreateIndividualResult(false);&#xd;
+        &#xd;
+        if (response.data.txt_customerID !== undefined) {&#xd;
+            setCreateIndividualResult(true);&#xd;
+            KDF.showSuccess(&apos;Individual created successfully&apos;);&#xd;
+            console.log(&apos;txt_customerID &apos;+response.data.txt_customerID);&#xd;
+            customerid_subscriber = response.data.txt_customerID;&#xd;
+            KDF.setVal(&apos;txt_customerid_subscriber&apos;,response.data.txt_customerID);&#xd;
+            console.log(&apos;customerid_subscriber :&apos;+customerid_subscriber);&#xd;
+        }&#xd;
+	}&#xd;
+	/* action performed when CA  update-indivudal is called */&#xd;
+	else if (action == &apos;update-individual-new&apos;) {&#xd;
+	   setUpdateIndividualResult(false);&#xd;
+	    console.log (&apos;update result :&apos;+response.data.txt_success);&#xd;
+	    if ( response.data.txt_success === &apos;Completed&apos; ) {&#xd;
+	        console.log(&apos;madrid loser&apos;);&#xd;
+	        //KDF.setVal(&apos;txta_full_address_retrieve&apos;,KDF.getVal(&apos;txt_r_streetnumber&apos;) +&apos; &apos;+KDF.getVal(&apos;txt_r_streetname&apos;).toProperCase()+&apos;, &apos;+KDF.getVal(&apos;txt_r_town&apos;).toProperCase()+&apos; &apos;+KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+	        setUpdateIndividualResult(true);&#xd;
+	        //KDF.showSuccess(&apos;Individual updated successfully&apos;);&#xd;
+	    }&#xd;
+	} else if (action === &apos;get_uprn&apos;) {&#xd;
+	    console.log(response.data.uprn);&#xd;
+	    v_uprn = null;&#xd;
+	    if (response.data.uprn) {&#xd;
+	        v_uprn = response.data.uprn;&#xd;
+	    }&#xd;
+	    KDF.setVal(&apos;txt_p_uprn&apos;,v_uprn);&#xd;
+	    KDF.setVal(&apos;txt_c_uprn&apos;,v_uprn);&#xd;
+	    if (var_update) {&#xd;
+	       //KDF.showWidget(&apos;but_continue_customer_address&apos;);&#xd;
+	       console.log(&apos;updating individual details&apos;);&#xd;
+            update_individual_details = false;&#xd;
+            KDF.customdata(&apos;update-individual-new&apos;, &apos;create&apos;, true, true, {&apos;customerID&apos;:KDF.getVal(&apos;customerID&apos;), &apos;txt_first_name&apos;:KDF.getVal(&apos;txt_first_name&apos;),&apos;txt_last_name&apos;:KDF.getVal(&apos;txt_last_name&apos;),&apos;phone&apos;:KDF.getVal(&apos;phone&apos;),&apos;email&apos;:KDF.getVal(&apos;email&apos;),&apos;tel_mobile&apos;:KDF.getVal(&apos;tel_mobile&apos;),&apos;num_p_streetnumber&apos;:KDF.getVal(&apos;num_p_streetnumber&apos;),&apos;txt_p_streetname&apos;:KDF.getVal(&apos;txt_p_streetname&apos;),&apos;txt_p_town&apos;:KDF.getVal(&apos;txt_p_town&apos;),&apos;txt_p_postcode&apos;:KDF.getVal(&apos;txt_p_postcode&apos;),&apos;txt_p_uprn&apos;:KDF.getVal(&apos;txt_p_uprn&apos;)});  &#xd;
+	    } else if (var_create) {&#xd;
+	        //KDF.showWidget(&apos;but_continue_individual_address&apos;);    &#xd;
+	        console.log(&apos;creating individual&apos;);&#xd;
+	        console.log(&apos;creating individual&apos;);&#xd;
+            KDF.customdata(&apos;create-individual-new&apos;, &apos;create&apos;, true, true, {&apos;txt_c_forename&apos;:KDF.getVal(&apos;txt_c_forename&apos;),&apos;txt_c_surname&apos;:KDF.getVal(&apos;txt_c_surname&apos;),&apos;tel_c_telephone&apos;:KDF.getVal(&apos;tel_c_telephone&apos;),&apos;eml_c_email&apos;:KDF.getVal(&apos;eml_c_email&apos;),&apos;tel_c_mobile&apos;:KDF.getVal(&apos;tel_c_mobile&apos;),&apos;txt_c_addressnumber&apos;:KDF.getVal(&apos;txt_c_addressnumber&apos;),&apos;txt_c_addressline1&apos;:KDF.getVal(&apos;txt_c_addressline1&apos;),&apos;txt_c_town&apos;:KDF.getVal(&apos;txt_c_town&apos;),&apos;txt_c_postcode&apos;:KDF.getVal(&apos;txt_c_postcode&apos;), &apos;txt_c_uprn&apos;:KDF.getVal(&apos;txt_c_uprn&apos;)});&#xd;
+	    }&#xd;
+	} else if (action === &apos;voluntary_subscription&apos;) {&#xd;
+	   if (response.data.output_log === &apos;Subscribed&apos;) {&#xd;
+	        //KDF.showSuccess(&apos;Thank you for submitting your request, your reference is &apos;+KDF.kdf().form.ref+&apos;, your case id is &apos;+KDF.kdf().form.caseid);&#xd;
+	        console.log(&apos;subscribed&apos;);&#xd;
+	    }&#xd;
+	} else if (  action == &apos;person-retrieve-new&apos; ) {&#xd;
+	    console.log(&apos;person is retrieved&apos;);&#xd;
+	}&#xd;
+});	 // End of KDF_custom&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_optionSelected&apos;).on(&apos;_KDF_optionSelected&apos;, function(event, kdf, field, label, val) {&#xd;
+	// fires when an option has been selected in a dynamic radio/select/multicheckbox widget&#xd;
+	console.log(&apos;Viewmode : &apos;+KDF.getVal(&apos;rad_viewmode&apos;));&#xd;
+    &#xd;
+    if (field === &apos;rad_identifyc&apos;){&#xd;
+         if (label == &apos;yes&apos;) {&#xd;
+             &#xd;
+            if (KDF.getVal(&apos;txt_access&apos;) === &apos;citizen&apos;) {&#xd;
+                  KDF.showWidget(&apos;eml_subscriber&apos;);&#xd;
+                  KDF.showWidget(&apos;but_submit_citizen_details&apos;);&#xd;
+            } else if (KDF.getVal(&apos;txt_access&apos;) === &apos;agent&apos;) {&#xd;
+              KDF.showWidget(&apos;but_continue_citizen_details&apos;);&#xd;
+              KDF.hideWidget(&apos;but_submit_citizen_details&apos;);&#xd;
+            } &#xd;
+            not_associated = false;&#xd;
+         } else if (label === &apos;no&apos;) {&#xd;
+            if (KDF.getVal(&apos;txt_access&apos;) === &apos;citizen&apos;) {&#xd;
+                  KDF.showWidget(&apos;but_submit_citizen_details&apos;);&#xd;
+                  KDF.hideWidget(&apos;eml_subscriber&apos;);&#xd;
+            } else if (KDF.getVal(&apos;txt_access&apos;) === &apos;agent&apos;) {&#xd;
+              KDF.hideWidget(&apos;but_continue_citizen_details&apos;);&#xd;
+              KDF.showWidget(&apos;but_submit_citizen_details&apos;);&#xd;
+            }&#xd;
+            not_associated = true;&#xd;
+         }&#xd;
+    } &#xd;
+    &#xd;
+    /*show or hide widget when label of CS is changed*/&#xd;
+    if (field == &apos;cs_customer_search_id&apos;){&#xd;
+        console.log(&apos;label now : &apos;+label);&#xd;
+        console.log(&apos;value now : &apos;+val);&#xd;
+        &#xd;
+        ps_property_search = false;&#xd;
+        ps_property_customer = false;&#xd;
+        ps_property_individual = false;&#xd;
+        cs_customer_search = true;&#xd;
+        &#xd;
+        if(label == &apos;&apos;) {&#xd;
+            hideCustomerDetails();&#xd;
+        } else {&#xd;
+            KDF.setVal(&apos;customerID&apos;,val);&#xd;
+            showCustomerDetails();;&#xd;
+        }&#xd;
+    } &#xd;
+    &#xd;
+    /* show or hide address widget when label of PS is changed */&#xd;
+    if (field == &apos;ps_individual_id&apos;) {&#xd;
+        ps_property_search = false;&#xd;
+        ps_property_customer = false;&#xd;
+        ps_property_individual = true;&#xd;
+        cs_customer_search = false;&#xd;
+    }&#xd;
+    &#xd;
+    if (field == &apos;ps_existing_customer_id&apos;) {&#xd;
+        ps_property_search = false;&#xd;
+        ps_property_customer = true;&#xd;
+        ps_property_individual = false;&#xd;
+        cs_customer_search = false;&#xd;
+    }&#xd;
+    &#xd;
+}); // End of KDF_optionSelected&#xd;
+&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_objectdataLoaded&apos;).on(&apos;_KDF_objectdataLoaded&apos;, function(event, kdf, response, type, id) {&#xd;
+	// fires when the object data has been loaded&#xd;
+	console.log(&apos;object data loaded id :&apos;+id);&#xd;
+	console.log(&apos;object data loaded response :&apos;+response);&#xd;
+	console.log(&apos;object data loaded type :&apos;+type);&#xd;
+	&#xd;
+	if (type === &apos;customer&apos;) {&#xd;
+	    if (cs_customer_search) {&#xd;
+	         if (KDF.getVal(&apos;cs_customer_search_id&apos;)) {&#xd;
+	       KDF.setVal(&apos;num_p_streetnumber&apos;,KDF.getVal(&apos;txt_r_streetnumber&apos;));&#xd;
+           KDF.setVal(&apos;txt_p_streetname&apos;,KDF.getVal(&apos;txt_r_streetname&apos;));    &#xd;
+           KDF.setVal(&apos;txt_p_town&apos;,KDF.getVal(&apos;txt_r_town&apos;));    &#xd;
+           KDF.setVal(&apos;txt_p_postcode&apos;,KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+           &#xd;
+           KDF.showWidget(&apos;but_individual_notfound&apos;);&#xd;
+           //KDF.showWidget(&apos;but_updatedetails&apos;);&#xd;
+           KDF.showWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+           KDF.showWidget(&apos;but_individual_address&apos;);&#xd;
+	         }&#xd;
+	    }&#xd;
+	        &#xd;
+	    &#xd;
+	    &#xd;
+        console.log(&apos;current value of customer address (retrieved): &apos; + KDF.getVal(&apos;num_r_streetnumber&apos;) + KDF.getVal(&apos;txt_r_streetname&apos;) + KDF.getVal(&apos;txt_r_town&apos;) + KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+        console.log(&apos;current value of customer address : &apos; + KDF.getVal(&apos;num_p_streetnumber&apos;) + KDF.getVal(&apos;txt_p_streetname&apos;) + KDF.getVal(&apos;txt_p_town&apos;) + KDF.getVal(&apos;txt_p_postcode&apos;));&#xd;
+	} else if (type === &apos;property&apos;) {&#xd;
+	    console.log(&apos;property UPRN :&apos;+KDF.getVal(&apos;txt_uprn_ret&apos;));&#xd;
+	     if (ps_property_customer ) {&#xd;
+	        &#xd;
+	        $(&quot;#dform_widget_num_p_streetnumber&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_p_streetname&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_p_town&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_p_postcode&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            //KDF.showWidget(&apos;ahtm_edit_manual_customerdetails&apos;);&#xd;
+            KDF.hideWidget(&apos;ahtm_cancel_edit_manual_customerdetails&apos;);&#xd;
+	        &#xd;
+	        KDF.showWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+	        &#xd;
+	    } else if (ps_property_individual) {&#xd;
+	        KDF.showWidget(&apos;txt_c_addressnumber&apos;);&#xd;
+            KDF.showWidget(&apos;txt_c_addressline1&apos;);&#xd;
+            KDF.showWidget(&apos;txt_c_town&apos;);&#xd;
+            KDF.showWidget(&apos;txt_c_postcode&apos;);&#xd;
+            KDF.showWidget(&apos;but_continue_individual_address&apos;);&#xd;
+            KDF.hideWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+            KDF.showWidget(&apos;but_property_notfound&apos;);&#xd;
+            &#xd;
+            $(&quot;#dform_widget_txt_c_addressnumber&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_c_addressline1&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_c_town&quot;).attr(&quot;readonly&quot;, true);&#xd;
+            $(&quot;#dform_widget_txt_c_postcode&quot;).attr(&quot;readonly&quot;, true);&#xd;
+	    }&#xd;
+        &#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+// End of KDF_mapClicked&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_saveError&apos;).on(&apos;_KDF_saveError&apos;, function(event, kdf) {&#xd;
+	KDF.showError(KDF.buildValidationMessage(&apos;Oops, something went wrong in kdf_saveError&apos;));&#xd;
+});	// End of KDF_saveError	&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_save&apos;).on(&apos;_KDF_save&apos;, function(event, kdf) {&#xd;
+	// fires when the form has been saved&#xd;
+	console.log(KDF.getVal(&apos;txt_customerid_subscriber&apos;));&#xd;
+	console.log(not_associated);&#xd;
+	console.log(email_subscriber);&#xd;
+// 	case_created = true;&#xd;
+// 	if (!not_associated) {&#xd;
+//     	if (email_subscriber) {&#xd;
+//     	    if (KDF.getVal(&apos;txt_customerid_subscriber&apos;)) {&#xd;
+//     	        console.log(&apos;masuk nih&apos;);&#xd;
+//     	        KDF.customdata(&apos;voluntary_subscription&apos;, &apos;create&apos;, true, true, {&apos;@caseID&apos;:KDF.kdf().form.caseid, &apos;@emailAddress&apos;:email_subscriber,&apos;@taskName&apos;:&apos;case_created&apos;,&apos;@customerID&apos;:KDF.getVal(&apos;txt_customerid_subscriber&apos;)});&#xd;
+//     	    } else {&#xd;
+//     	        KDF.customdata(&apos;voluntary_subscription&apos;, &apos;create&apos;, true, true, {&apos;@caseID&apos;:KDF.kdf().form.caseid, &apos;@emailAddress&apos;:email_subscriber,&apos;@taskName&apos;:&apos;case_created&apos;,&apos;@customerID&apos;:&apos;&apos;});&#xd;
+//     	    }&#xd;
+//     	}&#xd;
+// 	}&#xd;
+&#xd;
+    var input_param = {&#xd;
+	    &apos;caseid&apos;    :   KDF.kdf().form.caseid, &#xd;
+	    &apos;email_address&apos; :   KDF.getVal(&apos;email_subscriber&apos;),&#xd;
+	    &apos;subscription_type&apos; :   &apos;enquiry_raised&apos;,&#xd;
+	    &apos;customerid&apos;:   KDF.getVal(&apos;txt_customerid_subscriber&apos;),&#xd;
+	    &apos;eventcode&apos; :   KDF.getVal(&apos;txt_eventcode&apos;),&#xd;
+	    &apos;subject_code&apos;  :   &apos;All&apos;&#xd;
+	};&#xd;
+	&#xd;
+	if (!not_associated) {&#xd;
+    	subscription(input_param);&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_customError&apos;).on(&apos;_KDF_customError&apos;, function( event, customaction, xhr, settings, thrownError) {&#xd;
+    KDF.showError(thrownError);&#xd;
+}); // End of KDF_customError&#xd;
+&#xd;
+/*Process happens when continue button in customer details - address is clicked*/&#xd;
+$(&apos;#dform_widget_button_but_continue_customer_address&apos;).click(function(){&#xd;
+    KDF.hidePage(&apos;create_individual_details&apos;);&#xd;
+    KDF.hidePage(&apos;create_individual_address&apos;);&#xd;
+    //email_subscriber = KDF.getVal(&apos;email&apos;);&#xd;
+    KDF.setVal(&apos;email_subscriber&apos;, KDF.getVal(&apos;email&apos;));&#xd;
+    KDF.setVal(&apos;txt_customerid_subscriber&apos;,KDF.getVal(&apos;customerID&apos;));&#xd;
+    console.log(&apos;retrieving UPRN&apos;);&#xd;
+    var_update = true;&#xd;
+	var_create = false;&#xd;
+	KDF.customdata(&apos;get_uprn&apos;, &apos;create&apos;, true, true, {&apos;p_addressnumber&apos;:KDF.getVal(&apos;num_p_streetnumber&apos;), &apos;p_addressname&apos;:KDF.getVal(&apos;txt_p_streetname&apos;), &apos;p_postcode&apos;:KDF.getVal(&apos;txt_p_postcode&apos;)});&#xd;
+});&#xd;
+&#xd;
+/*update customer details when Update Details button in page customer details is clicked*/&#xd;
+$(&apos;#dform_widget_button_but_updatedetails&apos;).click(function(){&#xd;
+   console.log(&apos;updating individual details&apos;);&#xd;
+    update_individual_details = true;&#xd;
+    KDF.customdata(&apos;update-individual-new&apos;, &apos;create&apos;, true, true, {&apos;customerID&apos;:KDF.getVal(&apos;customerID&apos;), &apos;txt_first_name&apos;:KDF.getVal(&apos;txt_first_name&apos;),&apos;txt_last_name&apos;:KDF.getVal(&apos;txt_last_name&apos;),&apos;phone&apos;:KDF.getVal(&apos;phone&apos;),&apos;email&apos;:KDF.getVal(&apos;email&apos;),&apos;tel_mobile&apos;:KDF.getVal(&apos;tel_mobile&apos;),&apos;num_p_streetnumber&apos;:KDF.getVal(&apos;num_r_streetnumber&apos;),&apos;txt_p_streetname&apos;:KDF.getVal(&apos;txt_r_streetname&apos;),&apos;txt_p_town&apos;:KDF.getVal(&apos;txt_r_town&apos;),&apos;txt_p_postcode&apos;:KDF.getVal(&apos;txt_r_postcode&apos;), &apos;txt_c_uprn&apos;:KDF.getVal(&apos;txt_c_uprn&apos;)});&#xd;
+    });&#xd;
+&#xd;
+/* create individual when button continue is clicked*/&#xd;
+$(&apos;#dform_widget_button_but_continue_individual_address&apos;).click(function(){&#xd;
+     console.log(&apos;retrieving UPRN&apos;);&#xd;
+    //email_subscriber = KDF.getVal(&apos;eml_c_email&apos;);&#xd;
+    KDF.setVal(&apos;email_subscriber&apos;, KDF.getVal(&apos;eml_c_email&apos;));&#xd;
+    customerid_subscriber = null;&#xd;
+    console.log(&apos;customerid_subscriber : &apos;+customerid_subscriber);&#xd;
+    var_update = false;&#xd;
+	var_create = true   ;&#xd;
+	KDF.customdata(&apos;get_uprn&apos;, &apos;create&apos;, true, true, {&apos;p_addressnumber&apos;:KDF.getVal(&apos;txt_c_addressnumber&apos;), &apos;p_addressname&apos;:KDF.getVal(&apos;txt_c_addressline1&apos;), &apos;p_postcode&apos;:KDF.getVal(&apos;txt_c_postcode&apos;)}); });&#xd;
+&#xd;
+/* when continue button of agent details page clicked */&#xd;
+$(&apos;#dform_widget_button_but_continue_selectindividual&apos;).click(function(){&#xd;
+    if (KDF.getVal(&apos;email&apos;)) {&#xd;
+        &#xd;
+        KDF.hidePage(&apos;create_individual_details&apos;);&#xd;
+        KDF.hidePage(&apos;create_individual_address&apos;)&#xd;
+        &#xd;
+        //email_subscriber = KDF.getVal(&apos;email&apos;);&#xd;
+        &#xd;
+        console.log(email_subscriber);&#xd;
+        KDF.setVal(&apos;email_subscriber&apos;, KDF.getVal(&apos;email&apos;));    &#xd;
+        //customerid_subscriber = KDF.getVal(&apos;customerID&apos;);&#xd;
+        KDF.setVal(&apos;txt_customerid_subscriber&apos;,KDF.getVal(&apos;customerID&apos;));&#xd;
+         console.log(&apos;clicked nih&apos;);&#xd;
+        KDF.hidePage(&apos;create_individual_details&apos;);&#xd;
+        KDF.hidePage(&apos;create_individual_address&apos;);&#xd;
+        &#xd;
+        KDF.setVal(&apos;num_p_streetnumber&apos;,KDF.getVal(&apos;txt_r_streetnumber&apos;));&#xd;
+        KDF.setVal(&apos;txt_p_streetname&apos;,KDF.getVal(&apos;txt_r_streetname&apos;));    &#xd;
+        KDF.setVal(&apos;txt_p_town&apos;,KDF.getVal(&apos;txt_r_town&apos;));    &#xd;
+        KDF.setVal(&apos;txt_p_postcode&apos;,KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+        &#xd;
+        KDF.hidePage(&apos;provide_details_address&apos;);&#xd;
+        &#xd;
+        console.log(&apos;updating individual details&apos;);&#xd;
+        update_individual_details = true;&#xd;
+        KDF.customdata(&apos;update-individual-new&apos;, &apos;create&apos;, true, true, {&apos;customerID&apos;:KDF.getVal(&apos;customerID&apos;), &apos;txt_first_name&apos;:KDF.getVal(&apos;txt_first_name&apos;),&apos;txt_last_name&apos;:KDF.getVal(&apos;txt_last_name&apos;),&apos;phone&apos;:KDF.getVal(&apos;phone&apos;),&apos;email&apos;:KDF.getVal(&apos;email&apos;),&apos;tel_mobile&apos;:KDF.getVal(&apos;tel_mobile&apos;),&apos;num_p_streetnumber&apos;:KDF.getVal(&apos;txt_r_streetnumber&apos;),&apos;txt_p_streetname&apos;:KDF.getVal(&apos;txt_r_streetname&apos;),&apos;txt_p_town&apos;:KDF.getVal(&apos;txt_r_town&apos;),&apos;txt_p_postcode&apos;:KDF.getVal(&apos;txt_r_postcode&apos;),&apos;txt_p_uprn&apos;:KDF.getVal(&apos;txt_uprn_details&apos;)});&#xd;
+&#xd;
+    //KDF.gotoPage(&apos;complete&apos;,true,true,true);&#xd;
+      //    KDF.gotoNextPage();&#xd;
+    } else {&#xd;
+        KDF.showWarning(&apos;Please provide email address&apos;);&#xd;
+    }&#xd;
+});&#xd;
+&#xd;
+/* When right arrow of CS is clicked, then customer details will be closed */&#xd;
+$(document).on(&apos;click&apos;,&apos;.dform_widget_search_closeresults&apos;,function(){&#xd;
+    var activeCustomerDetails =  $(&apos;#dform_page_provide_details&apos;).attr(&apos;data-active&apos;);&#xd;
+    var activeIndividualAddress =  $(&apos;#dform_page_create_individual_address&apos;).attr(&apos;data-active&apos;);&#xd;
+    var activeCustomerAddress = $(&apos;#dform_page_provide_details_address&apos;).attr(&apos;data-active&apos;);&#xd;
+    console.log(&apos;activeCustomerDetails : &apos;+activeCustomerDetails);&#xd;
+    console.log(&apos;activeIndividualAddress : &apos;+activeIndividualAddress);&#xd;
+    if (activeCustomerDetails === &apos;true&apos;) {&#xd;
+         if (!KDF.getVal(&apos;txt_customerID&apos;)) {&#xd;
+             KDF.hideSection(&apos;area_customer_name&apos;);&#xd;
+             KDF.hideSection(&apos;area_customer_contacts&apos;);&#xd;
+             KDF.hideWidget(&apos;hrd_customerdetails&apos;);&#xd;
+             //KDF.hideWidget(&apos;but_updatedetails&apos;);&#xd;
+             KDF.hideWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+             KDF.hideWidget(&apos;but_individual_address&apos;);&#xd;
+        }&#xd;
+        KDF.hideWidget(&apos;but_individual_notfound&apos;);&#xd;
+         &#xd;
+    }&#xd;
+    &#xd;
+    if (activeIndividualAddress === &apos;true&apos;) {&#xd;
+         KDF.hideWidget(&apos;txt_c_addressnumber&apos;);&#xd;
+         KDF.hideWidget(&apos;txt_c_addressline1&apos;);&#xd;
+         KDF.hideWidget(&apos;txt_c_town&apos;);&#xd;
+         KDF.hideWidget(&apos;txt_c_postcode&apos;);&#xd;
+         KDF.hideWidget(&apos;but_continue_individual_address&apos;);&#xd;
+         //KDF.hideWidget(&apos;ahtm_edit_manual_createindividual&apos;);&#xd;
+         KDF.hideWidget(&apos;but_property_notfound&apos;);&#xd;
+         KDF.hideWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+    }&#xd;
+    &#xd;
+    if (activeCustomerAddress === &apos;true&apos;) {&#xd;
+        KDF.hideWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+    }&#xd;
+    &#xd;
+    KDF.hideWidget(&apos;but_continue_home_address&apos;);&#xd;
+});&#xd;
+&#xd;
+/*jquery trigger based on display value*/&#xd;
+(function ($) {&#xd;
+	  $.each([&apos;show&apos;, &apos;hide&apos;], function (i, ev) {&#xd;
+	    var el = $.fn[ev];&#xd;
+	    $.fn[ev] = function () {&#xd;
+	      this.trigger(ev);&#xd;
+	      return el.apply(this, arguments);&#xd;
+	    };&#xd;
+	  });&#xd;
+	})(jQuery);&#xd;
+&#xd;
+/* trigger button individual not found when search result of CS is showed up also */	&#xd;
+$(&apos;#dform_widget_cs_customer_search_resultholder&apos;).on(&apos;show&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    KDF.showWidget(&apos;but_individual_notfound&apos;);&#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_cs_customer_search_resultholder&apos;).on(&apos;hide&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    if (!KDF.getVal(&apos;txt_customerID&apos;)) {&#xd;
+             KDF.hideSection(&apos;area_customer_name&apos;);&#xd;
+             KDF.hideSection(&apos;area_customer_contacts&apos;);&#xd;
+             KDF.hideWidget(&apos;hrd_customerdetails&apos;);&#xd;
+             //KDF.hideWidget(&apos;but_updatedetails&apos;);&#xd;
+             KDF.hideWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+             KDF.hideWidget(&apos;but_individual_address&apos;);&#xd;
+    }&#xd;
+    KDF.hideWidget(&apos;but_individual_notfound&apos;);&#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_ps_individual_resultholder&apos;).on(&apos;show&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    KDF.showWidget(&apos;but_property_notfound&apos;);&#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_ps_individual_resultholder&apos;).on(&apos;hide&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    KDF.hideWidget(&apos;txt_c_addressnumber&apos;);&#xd;
+    KDF.hideWidget(&apos;txt_c_addressline1&apos;);&#xd;
+    KDF.hideWidget(&apos;txt_c_town&apos;);&#xd;
+    KDF.hideWidget(&apos;txt_c_postcode&apos;);&#xd;
+    KDF.hideWidget(&apos;but_continue_individual_address&apos;);&#xd;
+    KDF.hideWidget(&apos;ahtm_edit_manual_createindividual&apos;);&#xd;
+    KDF.hideWidget(&apos;but_property_notfound&apos;);&#xd;
+    KDF.hideWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_ps_existing_customer_resultholder&apos;).on(&apos;show&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    KDF.showWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_ps_existing_customer_resultholder&apos;).on(&apos;hide&apos;, function(){&#xd;
+    console.log(&apos;sabi nih&apos;);&#xd;
+    KDF.hideWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+});&#xd;
+&#xd;
+/*update value of create_individual_result*/&#xd;
+var setCreateIndividualResult = function(val){&#xd;
+        create_individual_result = val;&#xd;
+    if (create_individual_result){&#xd;
+         //KDF.gotoPage(&apos;complete&apos;,true,true,true);&#xd;
+         KDF.gotoNextPage();&#xd;
+    };&#xd;
+};&#xd;
+&#xd;
+/*update value of update_individual_result*/&#xd;
+var setUpdateIndividualResult = function(val){&#xd;
+    update_individual_result = val;&#xd;
+    if (update_individual_result){&#xd;
+        // KDF.gotoPage(&apos;complete&apos;,true,true,true); &#xd;
+        KDF.setVal(&apos;txt_r_streetnumber&apos;,KDF.getVal(&apos;num_p_streetnumber&apos;));&#xd;
+        KDF.setVal(&apos;txt_r_streetname&apos;,KDF.getVal(&apos;txt_p_streetname&apos;));    &#xd;
+        KDF.setVal(&apos;txt_r_town&apos;,KDF.getVal(&apos;txt_p_town&apos;));    &#xd;
+        KDF.setVal(&apos;txt_r_postcode&apos;,KDF.getVal(&apos;txt_p_postcode&apos;));&#xd;
+        &#xd;
+        KDF.setVal(&apos;txta_full_address_retrieve&apos;,KDF.getVal(&apos;txt_r_streetnumber&apos;) +&apos; &apos;+KDF.getVal(&apos;txt_r_streetname&apos;).toProperCase()+&apos;, &apos;+KDF.getVal(&apos;txt_r_town&apos;).toProperCase()+&apos; &apos;+KDF.getVal(&apos;txt_r_postcode&apos;));&#xd;
+        &#xd;
+        KDF.setCustomerID($(&apos;[name=&quot;customerID&quot;]&apos;).val());&#xd;
+        &#xd;
+        KDF.gotoNextPage();&#xd;
+    };&#xd;
+};  &#xd;
+&#xd;
+$(&apos;#dform_mp_general_enquiry&apos;).off(&apos;_KDF_complete&apos;).on(&apos;_KDF_complete&apos;, function(event, kdf) {&#xd;
+	console.log(&apos;weeee&apos;);&#xd;
+	$(&apos;#dform_successMessage&apos;).addClass(hideclass);&#xd;
+	KDF.showSection(&apos;box_complete&apos;);&#xd;
+});&#xd;
+&#xd;
+/*function to show customer details */&#xd;
+function showCustomerDetails() {&#xd;
+     KDF.showSection(&apos;area_customer_name&apos;);&#xd;
+     KDF.showSection(&apos;area_customer_contacts&apos;);&#xd;
+     KDF.showWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+     KDF.showWidget(&apos;but_individual_address&apos;);&#xd;
+     KDF.showWidget(&apos;hrd_customerdetails&apos;);&#xd;
+     //KDF.showWidget(&apos;but_updatedetails&apos;);&#xd;
+}&#xd;
+&#xd;
+/*function to hide customer details */&#xd;
+function hideCustomerDetails() {&#xd;
+    KDF.hideSection(&apos;area_customer_name&apos;);&#xd;
+    KDF.hideSection(&apos;area_customer_contacts&apos;);&#xd;
+    KDF.hideWidget(&apos;hrd_customerdetails&apos;);&#xd;
+    KDF.hideWidget(&apos;but_updatedetails&apos;);&#xd;
+    KDF.hideWidget(&apos;but_continue_selectindividual&apos;);&#xd;
+    KDF.hideWidget(&apos;but_individual_address&apos;);&#xd;
+}&#xd;
+&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_cs_xustomerdetails_txt_forename&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_cs_customer_search_searchbutton&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_cs_customerdetails_txt_name&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_cs_customer_search_searchbutton&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_ps_customerdetails_txt_postcode&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_ps_existing_customer_searchholder&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_ps_customerdetails_txt_streetname&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_ps_existing_customer_searchholder&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_ps_createindividual_txt_postcode&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_ps_individual_searchbutton&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+$(document).on(&apos;keypress&apos;,&apos;#dform_widget_ps_createindividual_txt_streetname&apos;,function() {&#xd;
+	if (event.keyCode == 13) {&#xd;
+	    event.preventDefault();&#xd;
+		document.getElementById(&quot;dform_widget_ps_individual_searchbutton&quot;).click();&#xd;
+	}&#xd;
+});&#xd;
+&#xd;
+&#xd;
+$(&apos;#dform_widget_button_but_property_notfound_customer&apos;).click(function(){&#xd;
+    console.log(&apos;manually clicked&apos;);&#xd;
+        $(&quot;#dform_widget_num_p_streetnumber&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_p_streetname&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_p_town&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_p_postcode&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        &#xd;
+        if (!KDF.getVal(&apos;txt_p_streetname&apos;)) {&#xd;
+            KDF.setVal(&apos;num_p_streetnumber&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_p_streetname&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_p_town&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_p_postcode&apos;,&apos;&apos;);&#xd;
+            KDF.hideWidget(&apos;ahtm_cancel_edit_manual_customerdetails&apos;);&#xd;
+        } else {&#xd;
+             KDF.showWidget(&apos;ahtm_cancel_edit_manual_customerdetails&apos;);&#xd;
+        }&#xd;
+        &#xd;
+        KDF.hideWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+       &#xd;
+});&#xd;
+&#xd;
+$(&apos;#cancel_edit_manually_customerdetails&apos;).click(function(){&#xd;
+        console.log(&apos;cancel manually clicked&apos;);&#xd;
+        KDF.setVal(&apos;num_p_streetnumber&apos;,KDF.getVal(&apos;txt_temp_streetnumber_customerdetails&apos;));&#xd;
+        KDF.setVal(&apos;txt_p_streetname&apos;,KDF.getVal(&apos;txt_temp_streetname_customerdetails&apos;));&#xd;
+        //KDF.setVal(&apos;txt_p_town&apos;,KDF.getVal(&apos;txt_temp_town_customerdetails&apos;));&#xd;
+        KDF.setVal(&apos;txt_p_town&apos;,&apos;YourCity&apos;);&#xd;
+        KDF.setVal(&apos;txt_p_postcode&apos;,KDF.getVal(&apos;txt_temp_postcode_customerdetails&apos;));&#xd;
+        &#xd;
+        $(&quot;#dform_widget_num_p_streetnumber&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_p_streetname&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_p_town&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_p_postcode&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        KDF.hideWidget(&apos;ahtm_cancel_edit_manual_customerdetails&apos;);&#xd;
+        KDF.showWidget(&apos;but_property_notfound_customer&apos;);&#xd;
+        &#xd;
+});&#xd;
+&#xd;
+//$(&apos;#edit_manually_createindividual&apos;).click(function(){&#xd;
+$(&apos;#dform_widget_button_but_property_notfound&apos;).click(function(){&#xd;
+        $(&quot;#dform_widget_txt_c_addressnumber&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_c_addressline1&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_c_town&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        $(&quot;#dform_widget_txt_c_postcode&quot;).attr(&quot;readonly&quot;, false);&#xd;
+        &#xd;
+        if (!KDF.getVal(&apos;txt_c_addressline1&apos;)) {&#xd;
+            KDF.setVal(&apos;txt_c_addressnumber&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_c_addressline1&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_c_town&apos;,&apos;&apos;);&#xd;
+            KDF.setVal(&apos;txt_c_postcode&apos;,&apos;&apos;);&#xd;
+            KDF.hideWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+        } else {&#xd;
+            KDF.showWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+        }&#xd;
+        &#xd;
+        KDF.showWidget(&apos;txt_c_addressnumber&apos;);&#xd;
+        KDF.showWidget(&apos;txt_c_addressline1&apos;);&#xd;
+        KDF.showWidget(&apos;txt_c_town&apos;);&#xd;
+        KDF.showWidget(&apos;txt_c_postcode&apos;);&#xd;
+        KDF.showWidget(&apos;but_continue_individual_address&apos;);&#xd;
+        KDF.hideWidget(&apos;but_property_notfound&apos;);&#xd;
+        &#xd;
+});&#xd;
+&#xd;
+$(&apos;#cancel_edit_manually_createindividual&apos;).click(function(){&#xd;
+        KDF.setVal(&apos;txt_c_addressnumber&apos;,KDF.getVal(&apos;txt_temp_streetnumber_createindividual&apos;));&#xd;
+        KDF.setVal(&apos;txt_c_addressline1&apos;,KDF.getVal(&apos;txt_temp_streetname_createindividual&apos;));&#xd;
+        //KDF.setVal(&apos;txt_c_town&apos;,KDF.getVal(&apos;txt_temp_town_createindividual&apos;));&#xd;
+        KDF.setVal(&apos;txt_c_town&apos;,&apos;YourCity&apos;);&#xd;
+        KDF.setVal(&apos;txt_c_postcode&apos;,KDF.getVal(&apos;txt_temp_postcode_createindividual&apos;));&#xd;
+        &#xd;
+        $(&quot;#dform_widget_txt_c_addressnumber&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_c_addressline1&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_c_town&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        $(&quot;#dform_widget_txt_c_postcode&quot;).attr(&quot;readonly&quot;, true);&#xd;
+        KDF.hideWidget(&apos;ahtm_cancel_edit_manual_createindividual&apos;);&#xd;
+        KDF.showWidget(&apos;but_property_notfound&apos;);&#xd;
+        &#xd;
+});&#xd;
+&#xd;
+$(&apos;#dform_widget_button_but_submit_citizen_details&apos;).click(function(){&#xd;
+    console.log(&apos;sabi dong&apos;)&#xd;
+    if (KDF.getVal(&apos;rad_identifyc&apos;)===&apos;yes&apos;) {&#xd;
+        //email_subscriber = KDF.getVal(&apos;eml_subscriber&apos;);&#xd;
+        KDF.setVal(&apos;email_subscriber&apos;, KDF.getVal(&apos;eml_subscriber&apos;));&#xd;
+    } else {&#xd;
+        //email_subscriber = null;&#xd;
+        KDF.setVal(&apos;email_subscriber&apos;, null);&#xd;
+    }&#xd;
+    &#xd;
+    KDF.hidePage(&apos;create_individual_details&apos;);&#xd;
+    KDF.hidePage(&apos;create_individual_address&apos;);&#xd;
+    KDF.gotoPage(&apos;complete&apos;,true,true,true);&#xd;
+&#xd;
+});&#xd;
+&#xd;
+String.prototype.toProperCase = function () {&#xd;
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});&#xd;
+};&#xd;
+</script>
+  <pdfTransform></pdfTransform>
+  <controls>true</controls>
+  <navigation>true</navigation>
+  <navigationWidth>two</navigationWidth>
+  <progress>false</progress>
+  <navigationBut>false</navigationBut>
+  <closeBut>false</closeBut>
+  <saveBut>false</saveBut>
+  <printBut>false</printBut>
+  <checkBut>false</checkBut>
+  <downloadBut>false</downloadBut>
+  <makewritableBut>false</makewritableBut>
+  <external>true</external>
+  <recaptcha>false</recaptcha>
+  <startaction></startaction>
+  <saveaction></saveaction>
+  <completeaction></completeaction>
+  <widgets>
+    <Widget>
+      <id>2d318e8c-cf29-402e-839e-c5a34ce499cc</id>
+      <position>bin</position>
+      <type>header</type>
+      <name>hrd_WUA0XXP3</name>
+      <header>
+        <id>f4448639-e410-4876-a544-ae58a508cf1c</id>
+        <name>hrd_WUA0XXP3</name>
+        <type>header5</type>
+        <label>Please provide the date/time from when incident occured</label>
+        <classname>center</classname>
+        <active>false</active>
+      </header>
+    </Widget>
+    <Widget>
+      <id>0422ce65-8fc4-4718-b54e-faa941e284f1</id>
+      <position>bin</position>
+      <type>html</type>
+      <name>html_CJL78US4</name>
+      <html>
+        <id>2fbe9455-b353-4ad6-87e9-26f8ff05f789</id>
+        <name>html_CJL78US4</name>
+        <content>&lt;p&gt;Please provide the date/time from when the incident occured&lt;/p&gt;&#xd;
+</content>
+        <active>false</active>
+        <classname>right</classname>
+      </html>
+    </Widget>
+    <Widget>
+      <id>a42e1698-7f51-459d-8f22-b6dea198956d</id>
+      <position>bin</position>
+      <type>text</type>
+      <name>txt_DE40LF03</name>
+      <field>
+        <id>eeb65b01-835e-4dc6-a1c2-ca9d8578a2b1</id>
+        <label>Please provide the date/time from when the incident occured</label>
+        <name>txt_DE40LF03</name>
+        <type>text</type>
+        <checked>false</checked>
+        <readonly>false</readonly>
+        <required>false</required>
+        <active>true</active>
+        <labelposition>left</labelposition>
+        <labelwidth>six</labelwidth>
+        <classname>txt-gov text-align-right</classname>
+        <agentonly>false</agentonly>
+        <alwaysrequired>false</alwaysrequired>
+      </field>
+    </Widget>
+    <Widget>
+      <id>954faa0b-9751-49e5-877f-a0c3dfc4c4bb</id>
+      <position>bin</position>
+      <type>date</type>
+      <name>dt_bin_required</name>
+      <field>
+        <id></id>
+        <label>Date</label>
+        <name>dt_bin_required</name>
+        <type>date</type>
+        <checked>false</checked>
+        <readonly>false</readonly>
+        <required>false</required>
+        <max>0D</max>
+        <message>The date must be set before today&apos;s date</message>
+        <active>true</active>
+        <labelposition>left</labelposition>
+        <labelwidth>six</labelwidth>
+        <classname>txt-gov text-align-right</classname>
+        <condition>
+          <operator></operator>
+          <field></field>
+          <fieldtwo></fieldtwo>
+        </condition>
+        <agentonly>false</agentonly>
+        <alwaysrequired>false</alwaysrequired>
+      </field>
+    </Widget>
+    <Widget>
+      <id>0b25bac0-0a3d-4c62-b254-acbcbd8060f8</id>
+      <position>bin</position>
+      <type>time</type>
+      <name>time_0AG6QC58</name>
+      <field>
+        <id>01c355ac-5140-4705-b63e-8ff376ba54ff</id>
+        <label>Time</label>
+        <name>time_0AG6QC58</name>
+        <type>time</type>
+        <checked>false</checked>
+        <readonly>false</readonly>
+        <required>false</required>
+        <active>true</active>
+        <labelposition>left</labelposition>
+        <labelwidth>six</labelwidth>
+        <classname>txt-gov text-align-right</classname>
+        <agentonly>false</agentonly>
+        <alwaysrequired>false</alwaysrequired>
+      </field>
+    </Widget>
+    <Widget>
+      <id>1d10a4ec-b873-4a7c-b2d0-9854f7cd0ad2</id>
+      <position>bin</position>
+      <type>radio</type>
+      <name>rad_WHW23980</name>
+      <field>
+        <id>c9a1849b-b038-437c-81e6-70659971f605</id>
+        <label>Is your feedback regarding a specific incident?</label>
+        <name>rad_WHW23980</name>
+        <type>radio</type>
+        <checked>false</checked>
+        <readonly>false</readonly>
+        <required>false</required>
+        <active>true</active>
+        <classname>rad-margin-50</classname>
+        <verticalOptions>false</verticalOptions>
+        <options>
+          <Option>
+            <id>edfd2704-52b2-4216-9f5c-a0eca508f068</id>
+            <translations/>
+            <value>true</value>
+            <label>Yes</label>
+            <active>true</active>
+            <selected>false</selected>
+            <sectionon>area_incident</sectionon>
+          </Option>
+          <Option>
+            <id>fbceff7f-dad3-4356-a6e3-d2c92cbf945e</id>
+            <translations/>
+            <value>false</value>
+            <label>No</label>
+            <active>true</active>
+            <selected>false</selected>
+            <sectionoff>area_incident</sectionoff>
+          </Option>
+        </options>
+        <agentonly>false</agentonly>
+        <alwaysrequired>false</alwaysrequired>
+      </field>
+    </Widget>
+  </widgets>
+</FormMeta>

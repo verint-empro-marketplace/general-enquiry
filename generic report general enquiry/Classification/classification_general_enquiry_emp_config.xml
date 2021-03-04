@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<EnquiryExport>
+<Information buildnumber="35117" copyright="(c) KANA Software, Inc. 2019 http://www.kana.com" creationtime="Tuesday, October 22, 2019 10:59:39 AM" ipaddress="127.0.0.1" javaversion="1.8.0_211" user="root" version="15.4.4"/>
+<!---->
+<Classifications>
+<Classifier>
+<ClassifierKey>feedback</ClassifierKey>
+<ClassifierText>Feedback</ClassifierText>
+<Hidden>0</Hidden>
+<ParentKey>-1</ParentKey>
+<Child>
+<ClassifierKey>general_enquiry</ClassifierKey>
+<ClassifierText>General enquiry</ClassifierText>
+<Hidden>0</Hidden>
+<ParentKey>feedback</ParentKey>
+<Child>
+<ClassifierKey>general_enquiry</ClassifierKey>
+<ClassifierText>Make a general enquiry</ClassifierText>
+<Hidden>0</Hidden>
+<ParentKey>general_enquiry</ParentKey>
+<CaseCategoryProcessDefinitions>
+<CaseCategoryProcessDefinition>
+<CaseCategoryKey>case</CaseCategoryKey>
+<CaseDefinitionID>101010005</CaseDefinitionID>
+<CaseDefinitionKey>general_enquiry</CaseDefinitionKey>
+<CaseDefinitionName>General enquiry</CaseDefinitionName>
+</CaseCategoryProcessDefinition>
+</CaseCategoryProcessDefinitions>
+</Child>
+</Child>
+</Classifier>
+</Classifications>
+<CaseDefinitions>
+<CaseDefinition>
+<CaseDefinitionID>101010005</CaseDefinitionID>
+<CaseDefinitionKey>general_enquiry</CaseDefinitionKey>
+<CaseDefinitionName>General enquiry</CaseDefinitionName>
+<Priority>3</Priority>
+<Severity>3</Severity>
+<CaseEForms>
+<CaseEForm>
+<EFormID>101000014</EFormID>
+<EFormName>general_enquiry</EFormName>
+<AutoLaunch>1</AutoLaunch>
+</CaseEForm>
+</CaseEForms>
+<CaseQueue>
+<QueueKey>general_enquiry</QueueKey>
+<QueueName>General enquiry</QueueName>
+</CaseQueue>
+</CaseDefinition>
+</CaseDefinitions>
+<Queues>
+<CaseQueue>
+<QueueKey>general_enquiry</QueueKey>
+<QueueName>General enquiry</QueueName>
+<NotifyMethod>2</NotifyMethod>
+<NotifyTrigger>0</NotifyTrigger>
+<NotifyBoundary>0</NotifyBoundary>
+<NotifySubject>General Enquiry Case &lt;Case ID&gt;</NotifySubject>
+<NotifyMessage>A General Enquiry case has been submitted to your queue requiring inspection.  
+Please review the case as soon as possible.
+
+https://empro-edinburghcc.squiz.co.uk/lagan/uwa/case/view.html?caseref=&lt;Case ID&gt;</NotifyMessage>
+<NotificationUsers>
+<NotificationUser>
+<UserID>ahickie</UserID>
+</NotificationUser>
+<NotificationUser>
+<UserID>luthfan</UserID>
+</NotificationUser>
+<NotificationUser>
+<UserID>sirisha</UserID>
+</NotificationUser>
+</NotificationUsers>
+<QueueRoleUsers>
+<QueueRoleUser>
+<QueueRoleID>0</QueueRoleID>
+<QueueRoleName>Queue Supervisor</QueueRoleName>
+<UserID>lagan</UserID>
+</QueueRoleUser>
+</QueueRoleUsers>
+</CaseQueue>
+</Queues>
+<EForms>
+<EForm>
+<EFormID>101000014</EFormID>
+<EFormName>general_enquiry</EFormName>
+<EFormURL>https://forms-qa-edinburghcc.squiz.cloud/form/launch/general_enquiry?customerid=&lt;!12!/Interaction/ClientID!&gt;&amp;interactionid=&lt;!12!/Interaction/ID!&gt;</EFormURL>
+<EFormIsEf3>false</EFormIsEf3>
+</EForm>
+</EForms>
+<CaseCategories>
+<CaseCategory>
+<CaseCategoryKey>case</CaseCategoryKey>
+<Name>Case</Name>
+<Description>Default Case Category</Description>
+</CaseCategory>
+</CaseCategories>
+</EnquiryExport>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<EventExport>
+<Information buildnumber="35117" copyright="(c) KANA Software, Inc. 2019 http://www.kana.com" creationtime="Friday, November 8, 2019 2:20:18 AM" ipaddress="127.0.0.1" javaversion="1.8.0_211" user="root" version="15.4.4"/>
+<EventMappings>
+<EventMapping>
+<MappingID>101000006</MappingID>
+<EventCode>4100003</EventCode>
+<EventName>General enquiry</EventName>
+<AddNote>0</AddNote>
+<CaseCategoryKey>case</CaseCategoryKey>
+<Classifier>
+<ClassifierKey>feedback</ClassifierKey>
+<ClassifierText>Feedback</ClassifierText>
+<Child>
+<ClassifierKey>general_enquiry</ClassifierKey>
+<ClassifierText>General enquiry</ClassifierText>
+<Child>
+<ClassifierKey>general_enquiry</ClassifierKey>
+<ClassifierText>Make a general enquiry</ClassifierText>
+</Child>
+</Child>
+</Classifier>
+</EventMapping>
+</EventMappings>
+<Events>
+<Event>
+<EventCode>4100003</EventCode>
+<EventName>General enquiry</EventName>
+<Description>General enquiry </Description>
+</Event>
+</Events>
+</EventExport>
